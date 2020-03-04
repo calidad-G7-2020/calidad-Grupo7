@@ -1,0 +1,739 @@
+
+)com.mainpakage.Tetrix.SecondThreat#run()V_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java@ @("48"0*¸
+46_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaE E(¬
+ø
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaE E(&
+%4 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv…∆
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaE E(
+
+%5void"android.view.View#invalidate()V*(
+&
+%4 com.mainpakage.Tetrix.CustomView2invalidate()*
+45*Ó
+48_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaB B(¬
+ø
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaB B(&
+%0 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv¬
+ø
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaB B(&
+%1 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvº
+π
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaB B(!
+%2android.graphics.Bitmap"__id*1*/
+&
+%1 com.mainpakage.Tetrix.CustomView"
+bmp≠™
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaB B("
+
+%3void"Hcom.mainpakage.Tetrix.CustomView#randomPiece(Landroid/graphics/Bitmap;)V*(
+&
+%0 com.mainpakage.Tetrix.CustomView*
+
+%2android.graphics.Bitmap2&randomPiece(Landroid/graphics/Bitmap;)*
+46
+48
+0
+1*˝
+26_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javag g(!√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javag g(!'
+%28 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javag3 g(5'
+%29 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javag3 g(F5
+%30.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%29 com.mainpakage.Tetrix.CustomView2getSecondPiece()Çˇ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javag g(G
+%31boolean"dcom.mainpakage.Tetrix.CustomView#moverAbajoActiva(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)Z*)
+'
+%28 com.mainpakage.Tetrix.CustomView*7
+5
+%30.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2BmoverAbajoActiva(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javai( i(*'
+%32 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javai( i(;5
+%33.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%32 com.mainpakage.Tetrix.CustomView2getSecondPiece()–Õ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javai( i(H6
+%34/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"kcom.mainpakage.Tetrix.TetrixPieces.TetrixPiece#getSprites()[Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;*7
+5
+%33.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2getSprites()›
+⁄
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javai i(I7
+aux2/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"__id*8
+6
+%34/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+17
+21
+23
+12*‡
+28_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javad d(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javad d('
+%25 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javad d(/5
+%26.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%25 com.mainpakage.Tetrix.CustomView2getSecondPiece()ÓÎ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javad d(8
+%27void"8com.mainpakage.Tetrix.TetrixPieces.TetrixPiece#update()V*7
+5
+%26.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2update()*
+26*ù
+29_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac` c(b√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac` c(b'
+%23 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÂ‚
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac` c(s
+%24boolean"2com.mainpakage.Tetrix.CustomView#colisionActive()Z*)
+'
+%23 com.mainpakage.Tetrix.CustomView2colisionActive()*
+26
+28*Û
+30_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac? c(A√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac? c(A'
+%21 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac? c(R5
+%22.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%21 com.mainpakage.Tetrix.CustomView2getActivePiece()*
+26
+29*Û
+31_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac c(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac c('
+%19 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javac c(05
+%20.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%19 com.mainpakage.Tetrix.CustomView2getActivePiece()*
+28
+30*˚
+33_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaa a(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaa a('
+%17 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaa a('5
+%18.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%17 com.mainpakage.Tetrix.CustomView2getSecondPiece()*
+26
+17
+31
+12*í
+12a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÄ Ä(≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÅ# Å(%'
+%65 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvΩ∫
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÅ# Å(65
+%66.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%65 com.mainpakage.Tetrix.CustomView2getActivePiece()“œ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÅ# Å(C6
+%67/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"kcom.mainpakage.Tetrix.TetrixPieces.TetrixPiece#getSprites()[Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;*7
+5
+%66.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2getSprites()ﬁ
+€
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÅ Å(D6
+aux/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"__id*8
+6
+%67/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÇ Ç('
+%68 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÇ, Ç(.'
+%69 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvΩ∫
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÇ, Ç(?5
+%70.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%69 com.mainpakage.Tetrix.CustomView2getActivePiece()ÑÅ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÇ Ç(@
+%71boolean"dcom.mainpakage.Tetrix.CustomView#moverAbajoActiva(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)Z*)
+'
+%68 com.mainpakage.Tetrix.CustomView*7
+5
+%70.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2BmoverAbajoActiva(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)*
+46
+48
+5
+9
+0
+1*ƒ
+13_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java{ {(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java|( |(*'
+%59 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java|( |(;5
+%60.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%59 com.mainpakage.Tetrix.CustomView2getActivePiece()–Õ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java|( |(H6
+%61/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"kcom.mainpakage.Tetrix.TetrixPieces.TetrixPiece#getSprites()[Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;*7
+5
+%60.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2getSprites()›
+⁄
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java| |(I7
+caux/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"__id*8
+6
+%61/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java} }( '
+%62 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÂ
+‚
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java}+ }(24
+%63-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*9
+7
+caux/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*2 ÒÓ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java}+ }(>
+
+%64int":com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getLength()I*6
+4
+%63-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getLength()*
+12*±
+36_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaZ Z(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaZ Z('
+%13 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv‘—
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaZ Z( 
+%14void"+com.mainpakage.Tetrix.CustomView#downTop()V*)
+'
+%13 com.mainpakage.Tetrix.CustomView2	downTop()√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java[ [('
+%15 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv÷”
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.java[ [(!
+%16void",com.mainpakage.Tetrix.CustomView#gameOver()V*)
+'
+%15 com.mainpakage.Tetrix.CustomView2
+gameOver()*
+48
+33
+0
+1*‡
+14_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaz z(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaz z('
+%56 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaz z(+5
+%57.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%56 com.mainpakage.Tetrix.CustomView2getActivePiece()ÓÎ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaz z(4
+%58void"8com.mainpakage.Tetrix.TetrixPieces.TetrixPiece#update()V*7
+5
+%57.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2update()*
+13*ù
+15_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javayY y([√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javayY y(['
+%54 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÂ‚
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javayY y(l
+%55boolean"2com.mainpakage.Tetrix.CustomView#colisionSecond()Z*)
+'
+%54 com.mainpakage.Tetrix.CustomView2colisionSecond()*
+13
+14*É
+38_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaU U(¬
+ø
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaU U(&
+%9 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaU) U(+'
+%10 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvæ
+ª
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaU) U(/
+%11android.graphics.Bitmap"__id*2*0
+'
+%10 com.mainpakage.Tetrix.CustomView"
+bmpª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaU U(0
+%12void"Ncom.mainpakage.Tetrix.CustomView#randomSecondPiece(Landroid/graphics/Bitmap;)V*(
+&
+%9 com.mainpakage.Tetrix.CustomView* 
+
+%11android.graphics.Bitmap2,randomSecondPiece(Landroid/graphics/Bitmap;)*
+36
+48
+33
+0
+1*Û
+16_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javay: y(<√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javay: y(<'
+%52 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javay: y(M5
+%53.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%52 com.mainpakage.Tetrix.CustomView2getSecondPiece()*
+13
+15*Û
+17_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javay y(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javay y('
+%50 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javay y(,5
+%51.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%50 com.mainpakage.Tetrix.CustomView2getSecondPiece()*
+14
+16*û
+19_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javat t(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javat t('
+%48 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÊ„
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javat t(-
+%49void"4com.mainpakage.Tetrix.CustomView#resetSecondPiece()V*)
+'
+%48 com.mainpakage.Tetrix.CustomView2resetSecondPiece()*
+17
+12*
+0 "x
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaú ú(
+implicit return*Å
+1a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javañ ñ(≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javañ ñ('
+%89 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÕ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javañ ñ(
+%90void"android.view.View#invalidate()V*)
+'
+%89 com.mainpakage.Tetrix.CustomView2invalidate()≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaó ó('
+%91 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvΩ∫
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaó ó(#5
+%92.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%91 com.mainpakage.Tetrix.CustomView2getActivePiece()Çˇ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaó ó(3
+%93void"?com.mainpakage.Tetrix.TetrixPieces.TetrixPiece#changeYSpeed(I)V*7
+5
+%92.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece*2 2changeYSpeed(I)≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaò ò('
+%94 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaò ò(!'
+%95 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvΩ∫
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaò ò(25
+%96.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%95 com.mainpakage.Tetrix.CustomView2getActivePiece()˜Ù
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaò ò(3
+%97void"_com.mainpakage.Tetrix.CustomView#linesUpdate(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)V*)
+'
+%94 com.mainpakage.Tetrix.CustomView*7
+5
+%96.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2=linesUpdate(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaô ô('
+%98 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÿ’
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaô ô(
+%99void",com.mainpakage.Tetrix.CustomView#gameOver()V*)
+'
+%98 com.mainpakage.Tetrix.CustomView2
+gameOver()*
+48
+0*“
+3a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaê ê(≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaê ê('
+%85 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvﬁ€
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaê ê((
+%86void"/com.mainpakage.Tetrix.CustomView#switchPiece()V*)
+'
+%85 com.mainpakage.Tetrix.CustomView2switchPiece()≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaë ë('
+%87 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvËÂ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaë ë(-
+%88void"4com.mainpakage.Tetrix.CustomView#resetSecondPiece()V*)
+'
+%87 com.mainpakage.Tetrix.CustomView2resetSecondPiece()*
+46
+48
+0
+1*é
+4a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaé é(≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaé é('
+%83 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvÿ’
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaé é()
+%84void",com.mainpakage.Tetrix.CustomView#gameOver()V*)
+'
+%83 com.mainpakage.Tetrix.CustomView2
+gameOver()*
+3*≈
+5a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaâ$ â(%≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaã ã('
+%76 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvΩ∫
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaã ã(+5
+%77.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%76 com.mainpakage.Tetrix.CustomView2getActivePiece()Çˇ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaã ã(;
+%78void"?com.mainpakage.Tetrix.TetrixPieces.TetrixPiece#changeYSpeed(I)V*7
+5
+%77.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece*2 2changeYSpeed(I)≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaå å('
+%79 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv≈
+¬
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaå' å()'
+%80 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvΩ∫
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaå' å(:5
+%81.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getActivePiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%80 com.mainpakage.Tetrix.CustomView2getActivePiece()˜Ù
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaå å(;
+%82void"_com.mainpakage.Tetrix.CustomView#linesUpdate(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)V*)
+'
+%79 com.mainpakage.Tetrix.CustomView*7
+5
+%81.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2=linesUpdate(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)*
+3
+4*∏
+9a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÑ Ñ(!Í
+Á
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÑ& Ñ(,4
+%72-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*8
+6
+aux/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""ÈÊ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÑ& Ñ(3
+
+%73int"5com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getY()I*6
+4
+%72-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getY()Í
+Á
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÑ6 Ñ(<4
+%74-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*8
+6
+aux/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""Û
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaÑ6 Ñ(H
+
+%75int":com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getLength()I*6
+4
+%74-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getLength()*
+46
+48
+5
+9
+0
+1*ä
+20_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javar r(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javar r('
+%46 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv÷”
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javar r()
+%47void",com.mainpakage.Tetrix.CustomView#gameOver()V*)
+'
+%46 com.mainpakage.Tetrix.CustomView2
+gameOver()*
+19*∏
+21_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javao o(√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javao o('
+%39 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javao o(+5
+%40.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%39 com.mainpakage.Tetrix.CustomView2getSecondPiece()Ä˝
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javao o(;
+%41void"?com.mainpakage.Tetrix.TetrixPieces.TetrixPiece#changeYSpeed(I)V*7
+5
+%40.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece*2 2changeYSpeed(I)√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javap p('
+%42 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cv√
+¿
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javap' p()'
+%43 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvª∏
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javap' p(:5
+%44.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*)
+'
+%43 com.mainpakage.Tetrix.CustomView2getSecondPiece()ıÚ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javap p(;
+%45void"_com.mainpakage.Tetrix.CustomView#linesUpdate(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)V*)
+'
+%42 com.mainpakage.Tetrix.CustomView*7
+5
+%44.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2=linesUpdate(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)*
+19
+20*˛
+44_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaJ J(¬
+ø
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaK K(&
+%7 com.mainpakage.Tetrix.CustomView"__id*.*,$
+"com.mainpakage.Tetrix.SecondThreat"
+cvπ∂
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaK K(+4
+%8.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece"acom.mainpakage.Tetrix.CustomView#getSecondPiece()Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;*(
+&
+%7 com.mainpakage.Tetrix.CustomView2getSecondPiece()*
+36
+48
+38
+33
+0
+1*ñ
+45_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaI I(®
+•
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javaI I(
+
+%6void"java.lang.Thread#sleep(J)V*"
+java.lang.Thread*2d*
+44*≠
+23_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javak" k((È
+Ê
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javak- k(44
+%35-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*9
+7
+aux2/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""Á‰
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javak- k(;
+
+%36int"5com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getY()I*6
+4
+%35-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getY()È
+Ê
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javak> k(E4
+%37-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*9
+7
+aux2/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""ÒÓ
+_
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/SecondThreat.javak> k(Q
+
+%38int":com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getLength()I*6
+4
+%37-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getLength()*
+17
+21
+23
+12B&$
+"com.mainpakage.Tetrix.SecondThreat

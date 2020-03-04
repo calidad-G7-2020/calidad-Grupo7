@@ -1,0 +1,92 @@
+
+”com.mainpakage.Tetrix.CustomView#isCollisionPiece(Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;Lcom/mainpakage/Tetrix/TetrixPieces/TetrixPiece;)Z_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java’ ’(#"12*ä
+4_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java› ›()ê
+ç
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java›* ›(33
+%4-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*;
+9
+cubosa/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""ê
+ç
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java›5 ›(>3
+%5-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*;
+9
+cubosb/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""›
+˜
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java› ›(?
+%6boolean"‘com.mainpakage.Tetrix.CustomView#isCollisionCube(Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;)Z*$"
+ com.mainpakage.Tetrix.CustomView*5
+3
+%4-com.mainpakage.Tetrix.TetrixPieces.CubeSprite*5
+3
+%5-com.mainpakage.Tetrix.TetrixPieces.CubeSprite*
+6
+1*Ü
+5_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.javaš& š(,ê
+ç
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.javaš& š(/3
+%3-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*;
+9
+cubosb/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""*	
+4
+6
+1*Ü
+6_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.javaš š(ê
+ç
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.javaš š(3
+%2-com.mainpakage.Tetrix.TetrixPieces.CubeSprite"
+__arrayGet*;
+9
+cubosa/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+""*	
+5
+6
+1*Ï	
+12_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java“ “(ÍÊ
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java“ “(,5
+%0/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"kcom.mainpakage.Tetrix.TetrixPieces.TetrixPiece#getSprites()[Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;*5
+3
+a.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2getSprites()Þ
+Û
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java“ “(-9
+cubosa/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"__id*7
+5
+%0/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]ÍÊ
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java” ”(,5
+%1/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"kcom.mainpakage.Tetrix.TetrixPieces.TetrixPiece#getSprites()[Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;*5
+3
+b.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece2getSprites()Þ
+Û
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java” ”(-9
+cubosb/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]"__id*7
+5
+%1/com.mainpakage.Tetrix.TetrixPieces.CubeSprite[]*
+6
+1*Ï
+1_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¡ ¡("i
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¡ ¡(
+"":3
+a.com.mainpakage.Tetrix.TetrixPieces.TetrixPiece:3
+b.com.mainpakage.Tetrix.TetrixPieces.TetrixPieceB$"
+ com.mainpakage.Tetrix.CustomView

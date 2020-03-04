@@ -1,0 +1,38 @@
+
+‘com.mainpakage.Tetrix.CustomView#isCollisionCube(Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;Lcom/mainpakage/Tetrix/TetrixPieces/CubeSprite;)Z_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¥ ¥(#"3*Ë
+2_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦< ¦(Gîë
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦< ¦(N	
+%2int"5com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getY()I*>
+<
+cubeSprite1-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getY()îë
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦R ¦(d	
+%3int"5com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getY()I*>
+<
+cubeSprite2-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getY()*
+1*Î
+3_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦ ¦(îë
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦ ¦("	
+%0int"5com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getX()I*>
+<
+cubeSprite1-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getX()îë
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦& ¦(8	
+%1int"5com.mainpakage.Tetrix.TetrixPieces.CubeSprite#getX()I*>
+<
+cubeSprite2-com.mainpakage.Tetrix.TetrixPieces.CubeSprite2getX()*
+2
+1*Ï
+1_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦ ¦(f"i
+_
+SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java¦ ¦(f
+"":<
+cubeSprite1-com.mainpakage.Tetrix.TetrixPieces.CubeSprite:<
+cubeSprite2-com.mainpakage.Tetrix.TetrixPieces.CubeSpriteB$"
+ com.mainpakage.Tetrix.CustomView
