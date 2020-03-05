@@ -23,6 +23,7 @@ sonarqube {
         property "sonar.organization", "calidad-g7-2020"
         property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.login", "a6e42f92d088327c83c720212f870da1e227a7b1"
+        property "sonar.branch.name", "feature/sonar-cloud"
     }
 }
 allprojects {
