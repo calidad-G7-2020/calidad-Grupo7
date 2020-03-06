@@ -1,0 +1,1125 @@
+
+4com.mainpakage.Tetrix.MainActivity#selectPalette(I)Va
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaï ï("2"3"4"5"6"0*Á=
+2a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaª ª(ùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaº8 º(F%
+%112android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaºH º(R(
+%113 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaºH º(X
+%114int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaº º(Y
+%115android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%112android.content.res.Resources*
+
+%114int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaº º(Y2$
+"com.mainpakage.Tetrix.MainActivity"
+
+bmpPiece"__id*!
+
+%115android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaΩ9 Ω(G%
+%116android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaΩI Ω(S(
+%117 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaΩI Ω(Y
+%118int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaΩ Ω(Z
+%119android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%116android.content.res.Resources*
+
+%118intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaΩ Ω(Z3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece1"__id*!
+
+%119android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaæ9 æ(G%
+%120android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaæI æ(S(
+%121 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaæI æ(V
+%122int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaæ æ(W
+%123android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%120android.content.res.Resources*
+
+%122intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaæ æ(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece2"__id*!
+
+%123android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaø9 ø(G%
+%124android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaøI ø(S(
+%125 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaøI ø(V
+%126int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaø ø(W
+%127android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%124android.content.res.Resources*
+
+%126intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaø ø(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece3"__id*!
+
+%127android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¿9 ¿(G%
+%128android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¿I ¿(S(
+%129 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¿I ¿(V
+%130int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¿ ¿(W
+%131android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%128android.content.res.Resources*
+
+%130intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¿ ¿(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece4"__id*!
+
+%131android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¡9 ¡(G%
+%132android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¡I ¡(S(
+%133 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¡I ¡(V
+%134int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¡ ¡(W
+%135android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%132android.content.res.Resources*
+
+%134intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¡ ¡(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece5"__id*!
+
+%135android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬9 ¬(G%
+%136android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬I ¬(S(
+%137 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬I ¬(V
+%138int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬ ¬(W
+%139android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%136android.content.res.Resources*
+
+%138intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬ ¬(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece6"__id*!
+
+%139android.graphics.Bitmap*
+0*«=
+3a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≤ ≤(úô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≥8 ≥(F$
+%84android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≥H ≥(R'
+%85 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≥H ≥(X
+
+%86int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≥ ≥(Y
+%87android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%84android.content.res.Resources*
+
+
+%86int¬
+ø
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≥ ≥(Y2$
+"com.mainpakage.Tetrix.MainActivity"
+
+bmpPiece"__id* 
+
+%87android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥9 ¥(G$
+%88android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥I ¥(S'
+%89 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥I ¥(Y
+
+%90int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥ ¥(Z
+%91android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%88android.content.res.Resources*
+
+
+%90int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥ ¥(Z3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece1"__id* 
+
+%91android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaµ9 µ(G$
+%92android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaµI µ(S'
+%93 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaµI µ(V
+
+%94int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaµ µ(W
+%95android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%92android.content.res.Resources*
+
+
+%94int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaµ µ(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece2"__id* 
+
+%95android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∂9 ∂(G$
+%96android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∂I ∂(S'
+%97 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∂I ∂(V
+
+%98int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∂ ∂(W
+%99android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%96android.content.res.Resources*
+
+
+%98int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∂ ∂(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece3"__id* 
+
+%99android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∑9 ∑(G%
+%100android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∑I ∑(S(
+%101 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∑I ∑(V
+%102int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∑ ∑(W
+%103android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%100android.content.res.Resources*
+
+%102intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∑ ∑(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece4"__id*!
+
+%103android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∏9 ∏(G%
+%104android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∏I ∏(S(
+%105 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∏I ∏(V
+%106int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∏ ∏(W
+%107android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%104android.content.res.Resources*
+
+%106intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∏ ∏(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece5"__id*!
+
+%107android.graphics.Bitmapùö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaπ9 π(G%
+%108android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()û
+õ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaπI π(S(
+%109 com.mainpakage.Tetrix.R$drawable"__id*
+""Ä
+~
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaπI π(V
+%110int"__id*
+""Õ
+ 
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaπ π(W
+%111android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*'
+%
+%108android.content.res.Resources*
+
+%110intƒ
+¡
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaπ π(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece6"__id*!
+
+%111android.graphics.Bitmap*
+0*Ø=
+4a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java© ©(úô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java™8 ™(F$
+%56android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java™H ™(R'
+%57 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java™H ™(X
+
+%58int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java™ ™(Y
+%59android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%56android.content.res.Resources*
+
+
+%58int¬
+ø
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java™ ™(Y2$
+"com.mainpakage.Tetrix.MainActivity"
+
+bmpPiece"__id* 
+
+%59android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java´9 ´(G$
+%60android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java´I ´(S'
+%61 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java´I ´(Y
+
+%62int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java´ ´(Z
+%63android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%60android.content.res.Resources*
+
+
+%62int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java´ ´(Z3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece1"__id* 
+
+%63android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨9 ¨(G$
+%64android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨I ¨(S'
+%65 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨I ¨(V
+
+%66int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨ ¨(W
+%67android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%64android.content.res.Resources*
+
+
+%66int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨ ¨(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece2"__id* 
+
+%67android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≠9 ≠(G$
+%68android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≠I ≠(S'
+%69 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≠I ≠(V
+
+%70int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≠ ≠(W
+%71android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%68android.content.res.Resources*
+
+
+%70int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≠ ≠(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece3"__id* 
+
+%71android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaÆ9 Æ(G$
+%72android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaÆI Æ(S'
+%73 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaÆI Æ(V
+
+%74int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaÆ Æ(W
+%75android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%72android.content.res.Resources*
+
+
+%74int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaÆ Æ(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece4"__id* 
+
+%75android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaØ9 Ø(G$
+%76android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaØI Ø(S'
+%77 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaØI Ø(V
+
+%78int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaØ Ø(W
+%79android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%76android.content.res.Resources*
+
+
+%78int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaØ Ø(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece5"__id* 
+
+%79android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∞9 ∞(G$
+%80android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∞I ∞(S'
+%81 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∞I ∞(V
+
+%82int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∞ ∞(W
+%83android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%80android.content.res.Resources*
+
+
+%82int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java∞ ∞(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece6"__id* 
+
+%83android.graphics.Bitmap*
+0*Ø=
+5a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java† †(úô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java°8 °(F$
+%28android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java°H °(R'
+%29 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java°H °(X
+
+%30int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java° °(Y
+%31android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%28android.content.res.Resources*
+
+
+%30int¬
+ø
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java° °(Y2$
+"com.mainpakage.Tetrix.MainActivity"
+
+bmpPiece"__id* 
+
+%31android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¢9 ¢(G$
+%32android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¢I ¢(S'
+%33 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¢I ¢(Y
+
+%34int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¢ ¢(Z
+%35android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%32android.content.res.Resources*
+
+
+%34int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¢ ¢(Z3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece1"__id* 
+
+%35android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java£9 £(G$
+%36android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java£I £(S'
+%37 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java£I £(V
+
+%38int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java£ £(W
+%39android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%36android.content.res.Resources*
+
+
+%38int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java£ £(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece2"__id* 
+
+%39android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§9 §(G$
+%40android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§I §(S'
+%41 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§I §(V
+
+%42int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§ §(W
+%43android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%40android.content.res.Resources*
+
+
+%42int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§ §(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece3"__id* 
+
+%43android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java•9 •(G$
+%44android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java•I •(S'
+%45 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java•I •(V
+
+%46int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java• •(W
+%47android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%44android.content.res.Resources*
+
+
+%46int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java• •(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece4"__id* 
+
+%47android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¶9 ¶(G$
+%48android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¶I ¶(S'
+%49 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¶I ¶(V
+
+%50int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¶ ¶(W
+%51android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%48android.content.res.Resources*
+
+
+%50int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¶ ¶(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece5"__id* 
+
+%51android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaß9 ß(G$
+%52android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaßI ß(S'
+%53 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaßI ß(V
+
+%54int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaß ß(W
+%55android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%52android.content.res.Resources*
+
+
+%54int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaß ß(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece6"__id* 
+
+%55android.graphics.Bitmap*
+0*û=
+6a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaó ó(õò
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaò8 ò(F#
+%0android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ú
+ô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaòH ò(R&
+%1 com.mainpakage.Tetrix.R$drawable"__id*
+""~
+|
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaòH ò(X	
+%2int"__id*
+""«
+ƒ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaò ò(Y
+%3android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*%
+#
+%0android.content.res.Resources*
+	
+%2int¡
+æ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaò ò(Y2$
+"com.mainpakage.Tetrix.MainActivity"
+
+bmpPiece"__id*
+
+%3android.graphics.Bitmapõò
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaô9 ô(G#
+%4android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ú
+ô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaôI ô(S&
+%5 com.mainpakage.Tetrix.R$drawable"__id*
+""~
+|
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaôI ô(Y	
+%6int"__id*
+""«
+ƒ
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaô ô(Z
+%7android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*%
+#
+%4android.content.res.Resources*
+	
+%6int¬
+ø
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaô ô(Z3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece1"__id*
+
+%7android.graphics.Bitmapõò
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaö9 ö(G#
+%8android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ú
+ô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaöI ö(S&
+%9 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaöI ö(V
+
+%10int"__id*
+""…
+∆
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaö ö(W
+%11android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*%
+#
+%8android.content.res.Resources*
+
+
+%10int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaö ö(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece2"__id* 
+
+%11android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaõ9 õ(G$
+%12android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaõI õ(S'
+%13 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaõI õ(V
+
+%14int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaõ õ(W
+%15android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%12android.content.res.Resources*
+
+
+%14int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaõ õ(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece3"__id* 
+
+%15android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaú9 ú(G$
+%16android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaúI ú(S'
+%17 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaúI ú(V
+
+%18int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaú ú(W
+%19android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%16android.content.res.Resources*
+
+
+%18int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaú ú(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece4"__id* 
+
+%19android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaù9 ù(G$
+%20android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaùI ù(S'
+%21 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaùI ù(V
+
+%22int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaù ù(W
+%23android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%20android.content.res.Resources*
+
+
+%22int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaù ù(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece5"__id* 
+
+%23android.graphics.Bitmapúô
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaû9 û(G$
+%24android.content.res.Resources"Vandroidx.appcompat.app.AppCompatActivity#getResources()Landroid/content/res/Resources;*&$
+"com.mainpakage.Tetrix.MainActivity2getResources()ù
+ö
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaûI û(S'
+%25 com.mainpakage.Tetrix.R$drawable"__id*
+""
+}
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaûI û(V
+
+%26int"__id*
+"" 
+«
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaû û(W
+%27android.graphics.Bitmap"handroid.graphics.BitmapFactory#decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;*"" 
+android.graphics.BitmapFactory*&
+$
+%24android.content.res.Resources*
+
+
+%26int√
+¿
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaû û(W3$
+"com.mainpakage.Tetrix.MainActivity"
+	bmpPiece6"__id* 
+
+%27android.graphics.Bitmap*
+0*
+0 "x
+a
+UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java≈ ≈(
+implicit return:
+""B&$
+"com.mainpakage.Tetrix.MainActivity
