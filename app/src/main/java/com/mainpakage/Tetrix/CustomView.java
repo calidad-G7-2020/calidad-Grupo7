@@ -13,6 +13,7 @@ import com.mainpakage.Tetrix.TetrixPieces.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import static java.lang.Thread.sleep;
 
@@ -134,9 +135,11 @@ public class CustomView extends View {
 
     public void randomPiece(Bitmap bmp) {
         randomPiece(bmp, nextPiece);
+        Random r = new Random();
+
         int palette;
         if (enableRandom) {
-            palette = (int) (Math.random() * 3);
+            palette = (r.nextInt(3));
             if (ma.thm == 1) {
                 palette += 3;
             }
@@ -145,7 +148,7 @@ public class CustomView extends View {
         }
         setCubeSpriteColor(palette);
 
-        nextPiece = (int) (Math.random() * 7);
+        nextPiece = (int) (r.nextInt(7));
     }
 
     public void randomPiece(Bitmap bmp, int piece) {
