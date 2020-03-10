@@ -23,9 +23,9 @@ public class CustomView extends View {
     Bitmap powerBmp2 = BitmapFactory.decodeResource(getResources(), R.drawable.slowtime);
     Bitmap powerBmp3 = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
     int score;
-    public SecondThreat st;
-    public SecondThreadAlter sta;
-    private final int lineScore = 30;
+    private SecondThreat st;
+    private SecondThreadAlter sta;
+    private static int lineScore = 30;
     List<TetrixPiece> piezas;
     private int nextPiece;
     private TetrixPiece activePiece;
@@ -175,12 +175,11 @@ public class CustomView extends View {
             default:
                 activePiece = null;
         }
-        if (activePiece != null) cactivePiece.changeYSpeed(bmp.getWidth());
+        if (activePiece != null) activePiece.changeYSpeed(bmp.getWidth());
     }
 
     public void randomSecondPiece(Bitmap bmp) {
         int aux = (int) (Math.random() * 7);
-        //ma.enableSwitch();
         randomSecondPiece(bmp, aux);
     }
 
