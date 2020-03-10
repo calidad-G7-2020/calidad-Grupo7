@@ -450,6 +450,34 @@ public class CustomView extends View {
         }
     }
 
+    public void oneLineMethod(Bitmap oldBmp){
+        enableRandom = false;
+        random = (r.nextInt(3));
+        if(ma.thm == 1) random += 3;
+        auxSetCubeSprite(random);
+        for (TetrixPiece p : piezas) {
+            if (p.isPowerUp() == 0)
+                p.setBitmap(bmp);
+        }
+        bmp = oldBmp;
+        setCubeSpriteColor(random);
+        this.invalidate();
+    }
+
+    public void moreThanOneLineMethod(Bitmap oldBmp){
+        enableRandom = true;
+        for (TetrixPiece p : piezas) {
+            int palette = (r.nextInt(3));
+            if (ma.thm == 1) {
+                palette += 3;
+            }
+            auxSetCubeSprite(palette);
+            if (p.isPowerUp() == 0)
+                p.setBitmap(bmp);
+        }
+        bmp = oldBmp;
+    }
+
     public void linesUpdate(TetrixPiece piece) {//coordinates of the last piece set
         piezas.add(piece);
         CubeSprite[] cubos = piece.getSprites();
@@ -464,34 +492,13 @@ public class CustomView extends View {
 
         deleteSprite(linesInfo, aux, aux2, 0, 0, piece);
 
-        if (numLines == 1) {
-            enableRandom = false;
+        if(numLines>=1){
             Bitmap oldBmp = bmp;
-            random = (r.nextInt(3));
-            if (ma.thm == 1) {
-                random += 3;
+            if(numLines==1){
+                oneLineMethod(oldBmp);
+            }else{
+                moreThanOneLineMethod(oldBmp);
             }
-            auxSetCubeSprite(random);
-            for (TetrixPiece p : piezas) {
-                if (p.isPowerUp() == 0)
-                    p.setBitmap(bmp);
-            }
-            bmp = oldBmp;
-            setCubeSpriteColor(random);
-            this.invalidate();
-        } else if (numLines > 1) {
-            enableRandom = true;
-            Bitmap oldBmp = bmp;
-            for (TetrixPiece p : piezas) {
-                int palette = (r.nextInt(3));
-                if (ma.thm == 1) {
-                    palette += 3;
-                }
-                auxSetCubeSprite(palette);
-                if (p.isPowerUp() == 0)
-                    p.setBitmap(bmp);
-            }
-            bmp = oldBmp;
         }
 
         updateScore(numLines);
