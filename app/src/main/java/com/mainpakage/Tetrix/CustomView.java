@@ -462,7 +462,7 @@ public class CustomView extends View {
         int aux2 = (cwidth / cube[0].getLength());
         numLines = 0;
 
-        deleteSprite(LinesInfo, aux, aux2, 0,0,piece);
+        deleteSprite(linesInfo, aux, aux2, 0,0,piece);
 //        for (int j = 0; j < aux; j++) {      //Recorre todas las líneas de la matriz
 //            if (LinesInfo[j] == aux2) {
 //                deleteLine(j, cubelength, piece.getInterSpace());
