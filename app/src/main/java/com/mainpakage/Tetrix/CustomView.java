@@ -425,17 +425,25 @@ public class CustomView extends View {
         st.setSecondPieceSpeed(aux2);
     }
 
-    public void ForToSwitch(CubeSprite[] cubos, int i) {
+    public void updateSprite(CubeSprite[] cubos, int i) {
         if (i < 4) {
             if (cubos[i] != null) {
                 int cy = cubos[i].getY() / cubos[i].getLength();
                 linesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
             }
             i++;
-            ForToSwitch(cubos, i);
+            updateSprite(cubos, i);
         }
     }
-
+    public void deleteSprite(int[] linesInfo, int aux, int aux2, int i,int j, TetrixPiece piece) {
+        if (i < aux) {
+            if (linesInfo[i] == aux2) {
+                deleteLine(j, cubelength, piece.getInterSpace());
+            }
+            i++;
+            deleteSprite(linesInfo, aux, aux2, i, j,piece);
+        }
+    }
     public void linesUpdate(TetrixPiece piece) {//coordinates of the last piece set
         piezas.add(piece);
         CubeSprite[] cubos = piece.getSprites();
@@ -447,21 +455,20 @@ public class CustomView extends View {
             }
         }*/
         int i = 0;
-        ForToSwitch(cubos,i);
+        updateSprite(cubos,i);
 
         CubeSprite[] cube = activePiece.getSprites();
         int aux = (cheight / cube[0].getLength() + 1);
         int aux2 = (cwidth / cube[0].getLength());
         numLines = 0;
-        for (int j = 0; j < aux; j++) {      //Recorre todas las líneas de la matriz
-            if (linesInfo[j] == aux2) {
-                deleteLine(j, cubelength, piece.getInterSpace());
-                j--;
-            }
-        }
-        
-        
-        
+
+        deleteSprite(LinesInfo, aux, aux2, 0,0,piece);
+//        for (int j = 0; j < aux; j++) {      //Recorre todas las líneas de la matriz
+//            if (LinesInfo[j] == aux2) {
+//                deleteLine(j, cubelength, piece.getInterSpace());
+//                j--;
+//            }
+//        }
         if (numLines == 1) {
             enableRandom = false;
             Bitmap oldBmp = bmp;
