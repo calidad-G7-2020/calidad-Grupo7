@@ -32,7 +32,7 @@ public class CustomView extends View {
     private TetrixPiece secondPiece;
     private PowerUp activePowerUp;
     List<PowerUp> powerUps;
-    private int[] LinesInfo;
+    private int[] linesInfo;
     MainActivity ma;
     int cwidth;
     int cheight;
@@ -53,7 +53,7 @@ public class CustomView extends View {
         bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespritey);
 
         score = 0;
-        LinesInfo = new int[50];  //20 is the number of available lines (matrix height)
+        linesInfo = new int[50];  //20 is the number of available lines (matrix height)
         nextPiece = 0;
         cwidth = 0;
         cheight = 0;
@@ -102,7 +102,6 @@ public class CustomView extends View {
 
     public int updateScore() {
         int aux = 1;
-        int score = 0;
         for (PowerUp p : powerUps) {
             if (p.isPowerUp() == 1) {
                 x2PowerUp paux = (x2PowerUp) p;
@@ -110,7 +109,7 @@ public class CustomView extends View {
                     aux = aux * 2;
             }
         }
-        return (score + lineScore * aux);
+        return (lineScore * aux);
     }
 
     public void updateScore(int lines) {
@@ -430,7 +429,7 @@ public class CustomView extends View {
         if (i < 4) {
             if (cubos[i] != null) {
                 int cy = cubos[i].getY() / cubos[i].getLength();
-                LinesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
+                linesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
             }
             i++;
             ForToSwitch(cubos, i);
@@ -444,7 +443,7 @@ public class CustomView extends View {
 /*      for (int i = 0; i < 4; i++) {   //Recorre los sprites de la figura última posicionada
             if (cubos[i] != null) {
                 int cy = cubos[i].getY() / cubos[i].getLength();
-                LinesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
+                linesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
             }
         }*/
         int i = 0;
@@ -455,11 +454,14 @@ public class CustomView extends View {
         int aux2 = (cwidth / cube[0].getLength());
         numLines = 0;
         for (int j = 0; j < aux; j++) {      //Recorre todas las líneas de la matriz
-            if (LinesInfo[j] == aux2) {
+            if (linesInfo[j] == aux2) {
                 deleteLine(j, cubelength, piece.getInterSpace());
                 j--;
             }
         }
+        
+        
+        
         if (numLines == 1) {
             enableRandom = false;
             Bitmap oldBmp = bmp;
@@ -495,7 +497,7 @@ public class CustomView extends View {
 
     private void deleteLine(int linea, int spriteLength, int interSpace) {   //eliminar la línea completa y bajar las piezas
         numLines++;
-        LinesInfo[linea] = 0;             //refinar si es necesario
+        linesInfo[linea] = 0;             //refinar si es necesario
         int spriteSpace = (spriteLength + interSpace);  //te situas en la altura deseada para borrar horizontalmente
         int y = spriteSpace * linea;
 
@@ -520,9 +522,9 @@ public class CustomView extends View {
         drop(y, spriteSpace);
 
         for (int i = linea; i > 0; i--) {        //checkear por bugs mañana
-            LinesInfo[i] = LinesInfo[i - 1];
+            linesInfo[i] = linesInfo[i - 1];
         }
-        LinesInfo[0] = 0;
+        linesInfo[0] = 0;
     }
 
     private void drop(int y, int spriteSpace) {
