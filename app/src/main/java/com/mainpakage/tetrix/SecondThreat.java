@@ -88,7 +88,11 @@ public class SecondThreat extends Thread {
 
                 if (contDownLine >= downLineSpeed) {
                     cv.downTop();
-                    cv.gameOver();
+                    try {
+                        cv.gameOver();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     contDownLine = 0;
                 }
                 if (!running) {
@@ -111,7 +115,11 @@ public class SecondThreat extends Thread {
                         cv.getSecondPiece().changeYSpeed(0);
                         cv.linesUpdate(cv.getSecondPiece());
                         if (running) {
-                            cv.gameOver();
+                            try {
+                                cv.gameOver();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                         cv.resetSecondPiece();
                     }
@@ -139,7 +147,11 @@ public class SecondThreat extends Thread {
                         cv.getActivePiece().changeYSpeed(0);
                         cv.linesUpdate(cv.getActivePiece());
                         if (running) {
-                            cv.gameOver();
+                            try {
+                                cv.gameOver();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                         cv.switchPiece();
                         cv.resetSecondPiece();
@@ -150,7 +162,11 @@ public class SecondThreat extends Thread {
                 cv.invalidate();
                 cv.getActivePiece().changeYSpeed(0);
                 cv.linesUpdate(cv.getActivePiece());
-                cv.gameOver();
+                try {
+                    cv.gameOver();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

@@ -1,9 +1,21 @@
 
-9com.mainpakage.Tetrix.TetrixPieces.LinePiece#getStatus()Ik
-_D:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/TetrixPieces/LinePiece.javaÅ Å("1*ç
-1k
-_D:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/TetrixPieces/LinePiece.javaÆ Æ("u
-k
-_D:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/TetrixPieces/LinePiece.javaÆ Æ(
-""B0.
-,com.mainpakage.Tetrix.TetrixPieces.LinePiece
+:com.mainpakage.tetrix.TetrixPieces.CubeSprite#getLength()I}
+sC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/CubeSprite.java/ /("1*Ô
+1}
+sC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/CubeSprite.java/# /(&ã
+à
+}
+sC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/CubeSprite.java/# /(&
+%0android.graphics.Bitmap"__id*:*8/
+-com.mainpakage.tetrix.TetrixPieces.CubeSprite"
+bmpßÜ
+}
+sC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/CubeSprite.java/# /(1	
+%1int"#android.graphics.Bitmap#getWidth()I*
+
+%0android.graphics.Bitmap2
+getWidth()"‡
+}
+sC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/CubeSprite.java/ /(2
+""B1/
+-com.mainpakage.tetrix.TetrixPieces.CubeSprite

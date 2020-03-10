@@ -208,10 +208,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (customView.getContext(), MainActivity.class);
         intent.putExtra("theme", thm);
         if(gameMode==0)
-            customView.st.start();
+            customView.getSt().start();
         else{
             disableSwitch();
-            customView.sta.start();}
+            customView.getSta().start();}
     }
 
 
@@ -241,9 +241,9 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("GameMode",gameMode);
             startActivityForResult(intent, 0);
             if(gameMode==0)
-                customView.st.interrupt();
+                customView.getSt().interrupt();
             else
-                customView.sta.interrupt();
+                customView.getSta().interrupt();
         }
     }
 

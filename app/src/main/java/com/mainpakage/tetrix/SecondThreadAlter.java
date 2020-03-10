@@ -81,7 +81,11 @@ public class SecondThreadAlter extends Thread{
                         cv.getActivePowerUp().changeYSpeed(0);
                         cv.linesUpdate(cv.getActivePowerUp());
                         if (running) {
-                            cv.gameOver();
+                            try {
+                                cv.gameOver();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                         cv.resetPower();
                     }
@@ -97,7 +101,11 @@ public class SecondThreadAlter extends Thread{
             if (running) {
                 cv.getActivePiece().changeYSpeed(0);
                 cv.linesUpdate(cv.getActivePiece());
-                cv.gameOver();
+                try {
+                    cv.gameOver();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

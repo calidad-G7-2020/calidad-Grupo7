@@ -1,8 +1,8 @@
 organization=calidad-g7-2020
 projectKey=calidad-G7-2020_calidad-Grupo7
 serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.5447
+serverVersion=8.0.0.5584
 branch=feature/refactoring
 dashboardUrl=https://sonarcloud.io/dashboard?id=calidad-G7-2020_calidad-Grupo7&branch=feature%2Frefactoring&resolved=false
-ceTaskId=AXCvD6mH1-h_uRXIHhgG
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXCvD6mH1-h_uRXIHhgG
+ceTaskId=AXDFmmRpc1qLGxJEMmHq
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXDFmmRpc1qLGxJEMmHq

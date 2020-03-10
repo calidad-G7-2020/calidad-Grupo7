@@ -1,17 +1,51 @@
 
-Bcom.mainpakage.Tetrix.PlayerData#getPlayerName()Ljava/lang/String;]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/PlayerData.java ("1*–
-1]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/PlayerData.java (¶
-³
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/PlayerData.java (
-%0java.lang.String"__id*4*2"
- com.mainpakage.Tetrix.PlayerData"
+/com.mainpakage.tetrix.CustomView#updateScore()Ip
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javai i("6*´
+2p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(´
+±
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(/
+p*com.mainpakage.tetrix.TetrixPieces.PowerUp"__id*
+""*
+5
+1*È
+4p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javam- m(.ä
+á
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javam m(/4
+paux,com.mainpakage.tetrix.TetrixPieces.x2PowerUp"__id*1
+/
+p*com.mainpakage.tetrix.TetrixPieces.PowerUpäá
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javan n("
+%2boolean"java.lang.Thread#isAlive()Z*6
+4
+paux,com.mainpakage.tetrix.TetrixPieces.x2PowerUp2	isAlive()*
+2*ý
+5p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javal l(ýú
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javal l(	
+%1int";com.mainpakage.tetrix.TetrixPieces.TetrixPiece#isPowerUp()I*1
+/
+p*com.mainpakage.tetrix.TetrixPieces.PowerUp2isPowerUp()*
+2
+4*Â
+6p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(!Å
+Â
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(!
+%0java.util.List"__id*2*0"
+ com.mainpakage.tetrix.CustomView"
 
-playerName"y
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/PlayerData.java (
-
-%0java.lang.StringB$"
- com.mainpakage.Tetrix.PlayerData
+powerUps*
+2*ñ
+1p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javar r("z
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javar r(!
+""B$"
+ com.mainpakage.tetrix.CustomView

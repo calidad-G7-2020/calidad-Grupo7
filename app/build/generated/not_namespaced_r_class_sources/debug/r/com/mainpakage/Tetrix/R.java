@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.mainpakage.Tetrix;
+package com.mainpakage.tetrix;
 
 public final class R {
   public static final class anim {

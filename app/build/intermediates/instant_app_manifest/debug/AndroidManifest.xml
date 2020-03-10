@@ -26,13 +26,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
-            android:name="com.mainpakage.Tetrix.Tutorial"
+            android:name="com.mainpakage.tetrix.Tutorial"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.mainpakage.Tetrix.QuickReboot"
+            android:name="com.mainpakage.tetrix.QuickReboot"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.mainpakage.Tetrix.StartMenu"
+            android:name="com.mainpakage.tetrix.StartMenu"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,10 +41,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mainpakage.Tetrix.MainActivity"
+            android:name="com.mainpakage.tetrix.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.mainpakage.Tetrix.GameOver"
+            android:name="com.mainpakage.tetrix.GameOver"
             android:screenOrientation="portrait" />
     </application>
 

@@ -1,57 +1,16 @@
 
-/com.mainpakage.Tetrix.CustomView#isSlowSpeed()Z]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.javaz z("6*Ž
-2]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java{ {(¡
-ž
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java{ {(/
-p*com.mainpakage.Tetrix.TetrixPieces.PowerUp"__id*
-""*
-5
-1*Ë
-3]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java ("g
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java ( 
-""*–
-4]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java}1 }(2Ó
-Ð
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java} }(36
-paux.com.mainpakage.Tetrix.TetrixPieces.slowPowerUp"__id*1
-/
-p*com.mainpakage.Tetrix.TetrixPieces.PowerUpÓÐ
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java~ ~(!
-%2boolean"java.lang.Thread#isAlive()Z*8
-6
-paux.com.mainpakage.Tetrix.TetrixPieces.slowPowerUp2	isAlive()*
-2
-3*×
-5]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java| |(êç
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java| |(	
-%1int";com.mainpakage.Tetrix.TetrixPieces.TetrixPiece#isPowerUp()I*1
-/
-p*com.mainpakage.Tetrix.TetrixPieces.PowerUp2isPowerUp()*
-2
-4*œ
-6]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java{ {(²
-¯
-]
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java{ {(
-%0java.util.List"__id*2*0"
- com.mainpakage.Tetrix.CustomView"
-
-powerUps*
-2*Ï
-1_
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java‚ ‚("i
-_
-SD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/CustomView.java‚ ‚(
-""B$"
- com.mainpakage.Tetrix.CustomView
+icom.mainpakage.tetrix.TetrixPieces.LinePiece#getSprites()[Lcom/mainpakage/tetrix/TetrixPieces/CubeSprite;|
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javal l(""1*¹
+1|
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javam m(û
+ø
+|
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javam m(5
+%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*;*9.
+,com.mainpakage.tetrix.TetrixPieces.LinePiece"
+cubes"·
+|
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javam m(7
+5
+%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]B0.
+,com.mainpakage.tetrix.TetrixPieces.LinePiece

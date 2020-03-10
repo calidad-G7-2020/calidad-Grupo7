@@ -47,6 +47,13 @@ public class CustomView extends View {
     int numLines;
     Random r = new Random();
 
+    public SecondThreat getSt() {
+        return st;
+    }
+    public SecondThreadAlter getSta() {
+        return sta;
+    }
+
     public CustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
         piezas = new ArrayList<>();
