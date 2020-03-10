@@ -1,14 +1,11 @@
-package com.mainpakage.Tetrix;
+package com.mainpakage.tetrix;
 
-import androidx.annotation.IdRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.Gravity;

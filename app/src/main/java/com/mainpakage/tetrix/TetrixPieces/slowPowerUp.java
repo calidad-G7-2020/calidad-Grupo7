@@ -1,4 +1,4 @@
-package com.mainpakage.Tetrix.TetrixPieces;
+package com.mainpakage.tetrix.TetrixPieces;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -6,7 +6,7 @@ import android.view.View;
 
 import static java.lang.Thread.sleep;
 
-public class x2PowerUp extends Thread implements PowerUp{
+public class slowPowerUp extends Thread implements PowerUp{
 
     private CubeSprite[] cubes;
     private final int xIni;
@@ -14,9 +14,9 @@ public class x2PowerUp extends Thread implements PowerUp{
     private final int spriteLength;
     private final int interpieceSpace;
 
-    public x2PowerUp(Bitmap bmp, View view){
+    public slowPowerUp(Bitmap bmp, View view){
         CubeSprite aux = new CubeSprite(bmp, view);
-        xIni=aux.getLength();
+        xIni=aux.getLength()*4;
         yIni=0;
         spriteLength=bmp.getWidth();
         interpieceSpace=0;
@@ -28,7 +28,7 @@ public class x2PowerUp extends Thread implements PowerUp{
 
     }
 
-    public x2PowerUp(Bitmap bmp, View view, int xini, int yini){
+    public slowPowerUp(Bitmap bmp, View view, int xini, int yini){
         xIni=xini;
         yIni=yini;
         spriteLength=bmp.getWidth();
@@ -87,7 +87,7 @@ public class x2PowerUp extends Thread implements PowerUp{
     }
 
     public TetrixPiece copyRight(Bitmap bmp,View view){
-        x2PowerUp nuevo = new x2PowerUp(bmp, view);
+        slowPowerUp nuevo = new slowPowerUp(bmp, view);
         CubeSprite[] c =nuevo.getSprites();
         c[0].setX(cubes[0].getX()+spriteLength);
         c[0].setY(cubes[0].getY());
@@ -99,7 +99,7 @@ public class x2PowerUp extends Thread implements PowerUp{
 
     }
     public TetrixPiece copyLeft(Bitmap bmp,View view){
-        x2PowerUp nuevo = new x2PowerUp(bmp, view);
+        slowPowerUp nuevo = new slowPowerUp(bmp, view);
         CubeSprite[] c =nuevo.getSprites();
         c[0].setX(cubes[0].getX()-spriteLength);
         c[0].setY(cubes[0].getY());
@@ -107,7 +107,7 @@ public class x2PowerUp extends Thread implements PowerUp{
     }
 
     public TetrixPiece copyDown(Bitmap bmp,View view){
-        x2PowerUp nuevo = new x2PowerUp(bmp, view);
+        slowPowerUp nuevo = new slowPowerUp(bmp, view);
         CubeSprite[] c =nuevo.getSprites();
         c[0].setX(cubes[0].getX());
         c[0].setY(cubes[0].getY()+spriteLength);
@@ -115,7 +115,7 @@ public class x2PowerUp extends Thread implements PowerUp{
     }
 
     public TetrixPiece copyRotate(Bitmap bmp,View view){
-        x2PowerUp nuevo = new x2PowerUp(bmp, view);
+        slowPowerUp nuevo = new slowPowerUp(bmp, view);
         CubeSprite[] c =nuevo.getSprites();
         c[0].setX(cubes[0].getX());
         c[0].setY(cubes[0].getY());
@@ -134,16 +134,16 @@ public class x2PowerUp extends Thread implements PowerUp{
 
     @Override
     public int isPowerUp() {
-        return 1;
+        return 3;
     }
 
-    public void run(){
-        for(int i=0;i<10;i++){
-            try{
-                sleep(1000);
-                System.out.println("working");
-            }catch(Exception e){}
 
+    @Override
+    public void run(){
+        for(int i=0;i<100;i++){
+            try{
+                sleep(100);
+            }catch(Exception e){}
         }
     }
 }

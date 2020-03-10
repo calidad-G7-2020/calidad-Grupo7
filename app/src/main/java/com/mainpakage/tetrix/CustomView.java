@@ -1,4 +1,4 @@
-package com.mainpakage.Tetrix;
+package com.mainpakage.tetrix;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 
-import com.mainpakage.Tetrix.TetrixPieces.*;
+import com.mainpakage.tetrix.TetrixPieces.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +45,7 @@ public class CustomView extends View {
     boolean enableRandom;
     int gameMode;
     int numLines;
+    Random r = new Random();
 
     public CustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -135,7 +136,7 @@ public class CustomView extends View {
 
     public void randomPiece(Bitmap bmp) {
         randomPiece(bmp, nextPiece);
-        Random r = new Random();
+
 
         int palette;
         if (enableRandom) {
@@ -148,7 +149,7 @@ public class CustomView extends View {
         }
         setCubeSpriteColor(palette);
 
-        nextPiece = (int) (r.nextInt(7));
+        nextPiece = (r.nextInt(7));
     }
 
     public void randomPiece(Bitmap bmp, int piece) {
@@ -181,7 +182,7 @@ public class CustomView extends View {
     }
 
     public void randomSecondPiece(Bitmap bmp) {
-        int aux = (int) (Math.random() * 7);
+        int aux =(r.nextInt(7));
         randomSecondPiece(bmp, aux);
     }
 
@@ -215,7 +216,7 @@ public class CustomView extends View {
     }
 
     public void randomActivePowerUp() {
-        int aux = (int) (Math.random() * 3);
+        int aux = (r.nextInt(3));
         randomActivePowerUp(aux);
     }
 
@@ -451,12 +452,6 @@ public class CustomView extends View {
         piezas.add(piece);
         CubeSprite[] cubos = piece.getSprites();
 
-/*      for (int i = 0; i < 4; i++) {   //Recorre los sprites de la figura última posicionada
-            if (cubos[i] != null) {
-                int cy = cubos[i].getY() / cubos[i].getLength();
-                linesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
-            }
-        }*/
         int i = 0;
         updateSprite(cubos,i);
 
@@ -466,16 +461,10 @@ public class CustomView extends View {
         numLines = 0;
 
         deleteSprite(linesInfo, aux, aux2, 0,0,piece);
-//        for (int j = 0; j < aux; j++) {      //Recorre todas las líneas de la matriz
-//            if (LinesInfo[j] == aux2) {
-//                deleteLine(j, cubelength, piece.getInterSpace());
-//                j--;
-//            }
-//        }
         if (numLines == 1) {
             enableRandom = false;
             Bitmap oldBmp = bmp;
-            random = (int) (Math.random() * 3);
+            random = (r.nextInt(3));
             if (ma.thm == 1) {
                 random += 3;
             }
@@ -491,7 +480,7 @@ public class CustomView extends View {
             enableRandom = true;
             Bitmap oldBmp = bmp;
             for (TetrixPiece p : piezas) {
-                int palette = (int) (Math.random() * 3);
+                int palette =(r.nextInt(3));
                 if (ma.thm == 1) {
                     palette += 3;
                 }

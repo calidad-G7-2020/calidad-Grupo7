@@ -1,4 +1,4 @@
-package com.mainpakage.Tetrix;
+package com.mainpakage.tetrix;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,10 +1,11 @@
-package com.mainpakage.Tetrix.TetrixPieces;
+package com.mainpakage.tetrix.TetrixPieces;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.view.View;
 
-public class LinePiece implements TetrixPiece{
+public class SPiece implements TetrixPiece {
+
 
 
     private CubeSprite[] cubes;
@@ -14,7 +15,7 @@ public class LinePiece implements TetrixPiece{
     private final int interpieceSpace;
     private int status=0;
 
-    public LinePiece(Bitmap bmp, View view){
+    public SPiece(Bitmap bmp, View view){
         CubeSprite aux = new CubeSprite(bmp, view);
         xIni=aux.getLength()*3;
         yIni=0;
@@ -24,13 +25,19 @@ public class LinePiece implements TetrixPiece{
 
         for(int i=0;i<4;i++) {
             cubes[i] = new CubeSprite(bmp, view);
-            cubes[i].setX(xIni + (spriteLength + interpieceSpace) * i);
-            cubes[i].setY(yIni);
         }
 
+        cubes[0].setX(xIni);
+        cubes[0].setY(yIni + (spriteLength + interpieceSpace));
+        cubes[1].setX(xIni + (spriteLength + interpieceSpace));
+        cubes[1].setY(yIni + (spriteLength + interpieceSpace));
+        cubes[2].setX(xIni + (spriteLength + interpieceSpace));
+        cubes[2].setY(yIni);
+        cubes[3].setX(xIni + (spriteLength + interpieceSpace)*2);
+        cubes[3].setY(yIni);
     }
 
-    public LinePiece(Bitmap bmp, View view,int xini,int yini){
+    public SPiece(Bitmap bmp, View view,int xini,int yini){
         xIni=xini;
         yIni=yini;
         spriteLength=bmp.getWidth();
@@ -39,14 +46,20 @@ public class LinePiece implements TetrixPiece{
 
         for(int i=0;i<4;i++) {
             cubes[i] = new CubeSprite(bmp, view);
-            cubes[i].setX(xIni + (spriteLength + interpieceSpace) * i);
-            cubes[i].setY(yIni);
         }
 
+        cubes[0].setX(xIni);
+        cubes[0].setY(yIni + (spriteLength + interpieceSpace));
+        cubes[1].setX(xIni + (spriteLength + interpieceSpace));
+        cubes[1].setY(yIni + (spriteLength + interpieceSpace));
+        cubes[2].setX(xIni + (spriteLength + interpieceSpace));
+        cubes[2].setY(yIni);
+        cubes[3].setX(xIni + (spriteLength + interpieceSpace)*2);
+        cubes[3].setY(yIni);
     }
 
     private void changeStatus(){
-        if (this.status == 0){
+        if (this.status <3){
             this.status++;
         }
         else{
@@ -61,20 +74,35 @@ public class LinePiece implements TetrixPiece{
         if(status==0){
             cubes[0].setX(x);
             cubes[0].setY(y-(spriteLength+interpieceSpace));
+            cubes[2].setX(x+(spriteLength+interpieceSpace));
+            cubes[2].setY(y);
+            cubes[3].setX(x+(spriteLength+interpieceSpace));
+            cubes[3].setY(y+(spriteLength+interpieceSpace));
+        }else if (status==1){
+            cubes[0].setX(cubes[2].getX());
+            cubes[0].setY(cubes[2].getY());
             cubes[2].setX(x);
             cubes[2].setY(y+(spriteLength+interpieceSpace));
-            cubes[3].setX(x);
-            cubes[3].setY(y+(spriteLength+interpieceSpace)*2);
-        }else{
-            cubes[0].setX(x - (spriteLength + interpieceSpace));
-            cubes[0].setY(y);
-            cubes[2].setX(x + (spriteLength + interpieceSpace));
+            cubes[3].setX(x-(spriteLength+interpieceSpace));
+            cubes[3].setY(y+(spriteLength+interpieceSpace));
+        }else if(status==2){
+            cubes[0].setX(cubes[2].getX());
+            cubes[0].setY(cubes[2].getY());
+            cubes[2].setX(x-(spriteLength+interpieceSpace));
             cubes[2].setY(y);
-            cubes[3].setX(x + (spriteLength + interpieceSpace) * 2);
-            cubes[3].setY(y);
+            cubes[3].setX(x-(spriteLength+interpieceSpace));
+            cubes[3].setY(y-(spriteLength+interpieceSpace));
+        }else{
+            cubes[0].setX(cubes[2].getX());
+            cubes[0].setY(cubes[2].getY());
+            cubes[2].setX(x);
+            cubes[2].setY(y-(spriteLength+interpieceSpace));
+            cubes[3].setX(x+(spriteLength+interpieceSpace));
+            cubes[3].setY(y-(spriteLength+interpieceSpace));
         }
         changeStatus();
     }
+
 
     @Override
     public void changeYSpeed(int speed) {
@@ -109,9 +137,8 @@ public class LinePiece implements TetrixPiece{
         return cubes;
     }
 
-    @Override
     public int getInterSpace() {
-        return this.interpieceSpace;
+        return interpieceSpace;
     }
 
     @Override
@@ -178,7 +205,7 @@ public class LinePiece implements TetrixPiece{
     }
 
     public TetrixPiece copyRotate(Bitmap bmp,View view){
-        LinePiece nuevo = new LinePiece(bmp, view);
+        SPiece nuevo = new SPiece(bmp, view);
         CubeSprite[] c =nuevo.getSprites();
         c[0].setX(cubes[0].getX());
         c[0].setY(cubes[0].getY());

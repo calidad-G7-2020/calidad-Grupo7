@@ -1,4 +1,4 @@
-package com.mainpakage.Tetrix;
+package com.mainpakage.tetrix;
 
 import org.junit.Test;
 

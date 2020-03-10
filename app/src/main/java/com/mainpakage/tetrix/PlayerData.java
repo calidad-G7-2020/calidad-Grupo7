@@ -1,4 +1,4 @@
-package com.mainpakage.Tetrix;
+package com.mainpakage.tetrix;
 
 public class PlayerData implements Comparable{
     private String playerName;

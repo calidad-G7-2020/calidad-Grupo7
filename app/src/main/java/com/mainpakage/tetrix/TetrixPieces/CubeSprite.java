@@ -1,4 +1,4 @@
-package com.mainpakage.Tetrix.TetrixPieces;
+package com.mainpakage.tetrix.TetrixPieces;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.view.View;
