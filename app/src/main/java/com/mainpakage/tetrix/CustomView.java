@@ -583,29 +583,28 @@ public class CustomView extends View {
         auxSetCubeSprite(palette);
     }
 
+    private void painting(Integer typeCube){
+        bmp = BitmapFactory.decodeResource(getResources(), typeCube);
+    }
+
     public void auxSetCubeSprite(int palette) {
         switch (palette) {
             case 0:
-            case 3: {
-                bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespritey);
+            case 3:
+                painting(R.drawable.cubespritey);
                 break;
-            }
-            case 1: {
-                bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespriteb);
+            case 1:
+                painting(R.drawable.cubespriteb);
                 break;
-            }
-            case 2: {
-                bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespritep);
+            case 2:
+                painting(R.drawable.cubespritep);
                 break;
-            }
-            case 4: {
-                bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespriteo);
+            case 4:
+                painting(R.drawable.cubespriteo);
                 break;
-            }
-            case 5: {
-                bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespriteg);
+            case 5:
+                painting(R.drawable.cubespriteg);
                 break;
-            }
         }
     }
 
