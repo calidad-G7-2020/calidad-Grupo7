@@ -605,6 +605,8 @@ public class CustomView extends View {
             case 5:
                 painting(R.drawable.cubespriteg);
                 break;
+            default:
+                break;
         }
     }
 
