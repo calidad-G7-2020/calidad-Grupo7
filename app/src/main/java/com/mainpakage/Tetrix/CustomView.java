@@ -25,14 +25,14 @@ public class CustomView extends View {
     int score;
     public SecondThreat st;
     public SecondThreadAlter sta;
-    private final int lineScore=30;
+    private final int lineScore = 30;
     List<TetrixPiece> piezas;
     private int nextPiece;
     private TetrixPiece activePiece;
     private TetrixPiece secondPiece;
     private PowerUp activePowerUp;
     List<PowerUp> powerUps;
-    private int [] LinesInfo;
+    private int[] LinesInfo;
     MainActivity ma;
     int cwidth;
     int cheight;
@@ -45,185 +45,194 @@ public class CustomView extends View {
     int gameMode;
     int numLines;
 
-    public CustomView(Context context, AttributeSet attrs){
-        super(context,attrs);
+    public CustomView(Context context, AttributeSet attrs) {
+        super(context, attrs);
         piezas = new ArrayList<>();
         powerUps = new ArrayList<>();
 
         bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespritey);
 
-        score=0;
-        LinesInfo=new int[50];  //20 is the number of available lines (matrix height)
-        nextPiece=0;
-        cwidth=0;
-        cheight=0;
-        CubeSprite caux = new CubeSprite(bmp,this);
-        cubelength=caux.getLength();
-        top=cubelength;
+        score = 0;
+        LinesInfo = new int[50];  //20 is the number of available lines (matrix height)
+        nextPiece = 0;
+        cwidth = 0;
+        cheight = 0;
+        CubeSprite caux = new CubeSprite(bmp, this);
+        cubelength = caux.getLength();
+        top = cubelength;
         paint1 = new Paint();
         paint1.setARGB(255, 255, 0, 0);
         paint1.setStrokeWidth(10);
         paint2 = new Paint();
         paint2.setARGB(255, 255, 255, 0);
         paint2.setStrokeWidth(8);
-        secondPiece=null;
-        enableRandom=true;
+        secondPiece = null;
+        enableRandom = true;
     }
 
     public TetrixPiece getActivePiece() {
         return activePiece;
     }
 
-    public TetrixPiece getSecondPiece() { return secondPiece; }
+    public TetrixPiece getSecondPiece() {
+        return secondPiece;
+    }
 
-    public void resetSecondPiece(){
-        secondPiece=null;
-        if(st.getGameSpeed()!=st.getTrueGameSpeed()){
+    public void resetSecondPiece() {
+        secondPiece = null;
+        if (st.getGameSpeed() != st.getTrueGameSpeed()) {
             switchSpeed();
         }
     }
 
 
-    public void setMa(MainActivity mainActivity,int gameMode){
-        ma=mainActivity;
-        this.gameMode=gameMode;
-        if(gameMode==0){
-            st= new SecondThreat(this);
+    public void setMa(MainActivity mainActivity, int gameMode) {
+        ma = mainActivity;
+        this.gameMode = gameMode;
+        if (gameMode == 0) {
+            st = new SecondThreat(this);
             sta = null;
-        }else{
+        } else {
             st = null;
             sta = new SecondThreadAlter(this);
         }
-        int palette=ma.palette;
+        int palette = ma.palette;
         setCubeSpriteColor(palette);
     }
 
-    public int updateScore(){
-        int aux=1;
-        int score=0;
-        for(PowerUp p:powerUps){
-            if(p.isPowerUp()==1){
-                    x2PowerUp paux = (x2PowerUp) p;
-                    if(paux.isAlive())
-                        aux=aux*2;
+    public int updateScore() {
+        int aux = 1;
+        int score = 0;
+        for (PowerUp p : powerUps) {
+            if (p.isPowerUp() == 1) {
+                x2PowerUp paux = (x2PowerUp) p;
+                if (paux.isAlive())
+                    aux = aux * 2;
             }
         }
-        return (score+lineScore*aux);
+        return (score + lineScore * aux);
     }
 
-    public void updateScore(int lines){
-        int scoreaux=0;
-        for(int i = 0;i<lines;i++){
-            scoreaux=scoreaux+updateScore();
+    public void updateScore(int lines) {
+        int scoreaux = 0;
+        for (int i = 0; i < lines; i++) {
+            scoreaux = scoreaux + updateScore();
         }
-        score+=scoreaux*lines;
-        ma.updateScore(""+score);
+        score += scoreaux * lines;
+        ma.updateScore("" + score);
     }
-    public boolean isSlowSpeed(){
-        for(PowerUp p:powerUps){
-            if(p.isPowerUp()==3){
+
+    public boolean isSlowSpeed() {
+        for (PowerUp p : powerUps) {
+            if (p.isPowerUp() == 3) {
                 slowPowerUp paux = (slowPowerUp) p;
-                if(paux.isAlive())
+                if (paux.isAlive())
                     return true;
             }
         }
         return false;
     }
 
-    public void randomPiece(Bitmap bmp){
-        randomPiece(bmp,nextPiece);
+    public void randomPiece(Bitmap bmp) {
+        randomPiece(bmp, nextPiece);
         int palette;
-        if(enableRandom) {
+        if (enableRandom) {
             palette = (int) (Math.random() * 3);
             if (ma.thm == 1) {
                 palette += 3;
             }
-        }else{
-            palette=random;
+        } else {
+            palette = random;
         }
-            setCubeSpriteColor(palette);
+        setCubeSpriteColor(palette);
 
-        nextPiece = (int)(Math.random()*7);
+        nextPiece = (int) (Math.random() * 7);
     }
 
-    public void randomPiece(Bitmap bmp,int piece){
-        switch(piece){
+    public void randomPiece(Bitmap bmp, int piece) {
+        switch (piece) {
             case 0:
-                activePiece= new CubePiece(bmp,this,cubelength*3,top-cubelength);
+                activePiece = new CubePiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
             case 1:
-                activePiece= new LinePiece(bmp,this,cubelength*3,top-cubelength);
+                activePiece = new LinePiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
             case 2:
-                activePiece = new SPiece(bmp,this,cubelength*3, top-cubelength);
+                activePiece = new SPiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
             case 3:
-                activePiece = new TPiece(bmp,this,cubelength*3,top-cubelength);
+                activePiece = new TPiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
             case 4:
-                activePiece = new ZPiece(bmp,this,cubelength*3,top-cubelength);
+                activePiece = new ZPiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
             case 5:
-                activePiece = new JPiece(bmp,this,cubelength*3,top-cubelength);
+                activePiece = new JPiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
             case 6:
-                activePiece = new LPiece(bmp,this,cubelength*3,top-cubelength);
+                activePiece = new LPiece(bmp, this, cubelength * 3, top - cubelength);
                 break;
+            default:
+                activePiece = null;
         }
-        activePiece.changeYSpeed(bmp.getWidth());
+        if (activePiece != null) cactivePiece.changeYSpeed(bmp.getWidth());
     }
 
-    public void randomSecondPiece(Bitmap bmp){
-        int aux = (int)(Math.random()*7);
+    public void randomSecondPiece(Bitmap bmp) {
+        int aux = (int) (Math.random() * 7);
         //ma.enableSwitch();
-        randomSecondPiece(bmp,aux);
+        randomSecondPiece(bmp, aux);
     }
 
-    public void randomSecondPiece(Bitmap bmp,int piece){
-        switch(piece){
+    public void randomSecondPiece(Bitmap bmp, int piece) {
+        switch (piece) {
             case 0:
-                secondPiece= new CubePiece(bmp,this,cubelength*3+6*cubelength,top-cubelength);
+                secondPiece = new CubePiece(bmp, this, cubelength * 3 + 6 * cubelength, top - cubelength);
                 break;
             case 1:
-                secondPiece= new LinePiece(bmp,this,cubelength*3+4*cubelength,top-cubelength);
+                secondPiece = new LinePiece(bmp, this, cubelength * 3 + 4 * cubelength, top - cubelength);
                 break;
             case 2:
-                secondPiece = new SPiece(bmp,this,cubelength*3+6*cubelength,top-cubelength);
+                secondPiece = new SPiece(bmp, this, cubelength * 3 + 6 * cubelength, top - cubelength);
                 break;
             case 3:
-                secondPiece = new TPiece(bmp,this,cubelength*3+6*cubelength,top-cubelength);
+                secondPiece = new TPiece(bmp, this, cubelength * 3 + 6 * cubelength, top - cubelength);
                 break;
             case 4:
-                secondPiece = new ZPiece(bmp,this,cubelength*3+6*cubelength,top-cubelength);
+                secondPiece = new ZPiece(bmp, this, cubelength * 3 + 6 * cubelength, top - cubelength);
                 break;
             case 5:
-                secondPiece = new JPiece(bmp,this,cubelength*3+6*cubelength,top-cubelength);
+                secondPiece = new JPiece(bmp, this, cubelength * 3 + 6 * cubelength, top - cubelength);
                 break;
             case 6:
-                secondPiece = new LPiece(bmp,this,cubelength*3+6*cubelength,top-cubelength);
+                secondPiece = new LPiece(bmp, this, cubelength * 3 + 6 * cubelength, top - cubelength);
                 break;
+            default:
+                secondPiece = null;
         }
-        secondPiece.changeYSpeed(bmp.getWidth());
+        if (secondPiece != null) secondPiece.changeYSpeed(bmp.getWidth());
     }
 
-    public void randomActivePowerUp(){
-        int aux = (int)(Math.random()*3);
+    public void randomActivePowerUp() {
+        int aux = (int) (Math.random() * 3);
         randomActivePowerUp(aux);
     }
 
-    public void randomActivePowerUp(int piece){
-        switch(piece){
+    public void randomActivePowerUp(int piece) {
+        switch (piece) {
             case 0:
-                activePowerUp= new x2PowerUp(powerBmp1,this,cubelength*2,top-cubelength);
+                activePowerUp = new x2PowerUp(powerBmp1, this, cubelength * 2, top - cubelength);
                 break;
             case 1:
-                activePowerUp= new slowPowerUp(powerBmp2,this,cubelength*2,top-cubelength);
+                activePowerUp = new slowPowerUp(powerBmp2, this, cubelength * 2, top - cubelength);
                 break;
             case 2:
-                activePowerUp= new tNTPowerUp(powerBmp3,this,cubelength*2,top-cubelength);
+                activePowerUp = new tNTPowerUp(powerBmp3, this, cubelength * 2, top - cubelength);
                 break;
+            default:
+                activePowerUp = null;
         }
-        activePowerUp.changeYSpeed(bmp.getWidth());
+        if (activePowerUp != null) activePowerUp.changeYSpeed(bmp.getWidth());
         powerUps.add(activePowerUp);
     }
 
@@ -235,51 +244,51 @@ public class CustomView extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas){
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         ma.printNextPiece(nextPiece);
-        int xmax=0;
-        while(xmax<cwidth){
-            xmax=xmax+cubelength;
+        int xmax = 0;
+        while (xmax < cwidth) {
+            xmax = xmax + cubelength;
         }
-        int ymax=0;
-        while(ymax<cheight){
-            ymax=ymax+cubelength;
+        int ymax = 0;
+        while (ymax < cheight) {
+            ymax = ymax + cubelength;
         }
-        int xpos=0;
-        do{
-            canvas.drawLine(xpos,0,xpos,ymax-cubelength,paint2);
-            xpos=xpos+cubelength;
-        }while(xpos<=xmax);
-        int ypos=0;
-        do{
-            canvas.drawLine(0,ypos,xmax-cubelength,ypos,paint2);
-            ypos=ypos+cubelength;
-        }while(ypos<ymax);
-        for(TetrixPiece tp:piezas){
+        int xpos = 0;
+        do {
+            canvas.drawLine(xpos, 0, xpos, ymax - cubelength, paint2);
+            xpos = xpos + cubelength;
+        } while (xpos <= xmax);
+        int ypos = 0;
+        do {
+            canvas.drawLine(0, ypos, xmax - cubelength, ypos, paint2);
+            ypos = ypos + cubelength;
+        } while (ypos < ymax);
+        for (TetrixPiece tp : piezas) {
             tp.onDraw(canvas);
         }
 
-        for(PowerUp pu:powerUps){
+        for (PowerUp pu : powerUps) {
             pu.onDraw(canvas);
         }
-        canvas.drawLine(0,top-cubelength,cwidth,top-cubelength,paint1);
+        canvas.drawLine(0, top - cubelength, cwidth, top - cubelength, paint1);
         activePiece.onDraw(canvas);
-        if(secondPiece!=null){
+        if (secondPiece != null) {
             secondPiece.onDraw(canvas);
         }
     }
 
 
-    public boolean isCollisionPiece (TetrixPiece a, TetrixPiece b) {
+    public boolean isCollisionPiece(TetrixPiece a, TetrixPiece b) {
         CubeSprite[] cubosa = a.getSprites();
         CubeSprite[] cubosb = b.getSprites();
         boolean aux = false;
         int i = 0;
-        while (i<=3 && !aux) {
-            int j=0;
-            while (j<=3 && !aux) {
-                if(cubosa[i]!=null && cubosb[j]!=null){
+        while (i <= 3 && !aux) {
+            int j = 0;
+            while (j <= 3 && !aux) {
+                if (cubosa[i] != null && cubosb[j] != null) {
                     aux = isCollisionCube(cubosa[i], cubosb[j]);
                 }
                 j++;
@@ -295,124 +304,124 @@ public class CustomView extends View {
     }
 
 
-
-    public void moverDerechaActiva (TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyRight(bmp,this);
+    public void moverDerechaActiva(TetrixPiece pieza) {
+        TetrixPiece nueva = pieza.copyRight(bmp, this);
         boolean nochocan = true;
         for (TetrixPiece ptablero : piezas) {
-            if(ptablero!=pieza)
-            nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
+            if (ptablero != pieza)
+                nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
         }
-        if(secondPiece!=null)
+        if (secondPiece != null)
             nochocan = nochocan && (!isCollisionPiece(nueva, secondPiece));
         boolean nofuera = true;
         CubeSprite[] cube = activePiece.getSprites();
-        for (CubeSprite c: nueva.getSprites()) {
-            nofuera = nofuera && ((c.getX()>=0) && (c.getX()<=cwidth-cube[0].getLength()));
+        for (CubeSprite c : nueva.getSprites()) {
+            nofuera = nofuera && ((c.getX() >= 0) && (c.getX() <= cwidth - cube[0].getLength()));
         }
         if (nochocan && nofuera) {
             activePiece.moveRight();
         }
     }
 
-    public void moverIzquierdaActiva (TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyLeft(bmp,this);
+    public void moverIzquierdaActiva(TetrixPiece pieza) {
+        TetrixPiece nueva = pieza.copyLeft(bmp, this);
         boolean nochocan = true;
         for (TetrixPiece ptablero : piezas) {
-            if(ptablero!=pieza)
+            if (ptablero != pieza)
                 nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
         }
-        if(secondPiece!=null)
+        if (secondPiece != null)
             nochocan = nochocan && (!isCollisionPiece(nueva, secondPiece));
         boolean nofuera = true;
         CubeSprite[] cube = activePiece.getSprites();
-        for (CubeSprite c: nueva.getSprites()) {
-            nofuera = nofuera && ((c.getX()>=0) && (c.getX()<=cwidth-cube[0].getLength()));
+        for (CubeSprite c : nueva.getSprites()) {
+            nofuera = nofuera && ((c.getX() >= 0) && (c.getX() <= cwidth - cube[0].getLength()));
         }
         if (nochocan && nofuera) {
             activePiece.moveLeft();
         }
     }
 
-    public void girar (TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyRotate(bmp,this);
+    public void girar(TetrixPiece pieza) {
+        TetrixPiece nueva = pieza.copyRotate(bmp, this);
         boolean nochocan = true;
         for (TetrixPiece ptablero : piezas) {
-            if(ptablero!=pieza)
+            if (ptablero != pieza)
                 nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
         }
-        if(secondPiece!=null)
+        if (secondPiece != null)
             nochocan = nochocan && (!isCollisionPiece(nueva, secondPiece));
         boolean nofuera = true;
         CubeSprite[] cube = activePiece.getSprites();
-        for (CubeSprite c: nueva.getSprites()) {
-            nofuera = nofuera && ((c.getX()>=0) && (c.getX()<=cwidth-cube[0].getLength()));
+        for (CubeSprite c : nueva.getSprites()) {
+            nofuera = nofuera && ((c.getX() >= 0) && (c.getX() <= cwidth - cube[0].getLength()));
         }
         if (nochocan && nofuera) {
             activePiece.rotate90Right();
         }
     }
 
-    public boolean moverAbajoActiva (TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyDown(bmp,this);
+    public boolean moverAbajoActiva(TetrixPiece pieza) {
+        TetrixPiece nueva = pieza.copyDown(bmp, this);
         boolean nochocan = true;
         for (TetrixPiece ptablero : piezas) {
-            if(ptablero!=pieza)
+            if (ptablero != pieza)
                 nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
         }
         return nochocan;
     }
 
-    public boolean colisionSecond () {
-        TetrixPiece nueva = activePiece.copyDown(bmp,this);
+    public boolean colisionSecond() {
+        TetrixPiece nueva = activePiece.copyDown(bmp, this);
         boolean nochocan = true;
-            if(secondPiece!=null)
-                nochocan = (!isCollisionPiece(nueva, secondPiece));
+        if (secondPiece != null)
+            nochocan = (!isCollisionPiece(nueva, secondPiece));
         return nochocan;
     }
 
-    public boolean colisionActive () {
-        TetrixPiece nueva = secondPiece.copyDown(bmp,this);
+    public boolean colisionActive() {
+        TetrixPiece nueva = secondPiece.copyDown(bmp, this);
         boolean nochocan = true;
-        if(activePiece!=null)
+        if (activePiece != null)
             nochocan = (!isCollisionPiece(nueva, activePiece));
         return nochocan;
     }
 
-    public boolean colisionPowerActive () {
-        TetrixPiece nueva = activePowerUp.copyDown(bmp,this);
+    public boolean colisionPowerActive() {
+        TetrixPiece nueva = activePowerUp.copyDown(bmp, this);
         boolean nochocan = true;
-        if(activePiece!=null)
+        if (activePiece != null)
             nochocan = (!isCollisionPiece(nueva, activePiece));
         return nochocan;
     }
 
-    public boolean colisionActivePower () {
-        TetrixPiece nueva = activePiece.copyDown(bmp,this);
+    public boolean colisionActivePower() {
+        TetrixPiece nueva = activePiece.copyDown(bmp, this);
         boolean nochocan = true;
-        if(activePiece!=null)
+        if (activePiece != null)
             nochocan = (!isCollisionPiece(nueva, activePowerUp));
         return nochocan;
     }
 
-    public void resetPower(){
-        activePowerUp=null;
+    public void resetPower() {
+        activePowerUp = null;
     }
 
-    public void switchPiece(){
-        if(secondPiece!=null){
-        st.secondBool = !st.secondBool;
-        TetrixPiece aux = activePiece;
-        activePiece = secondPiece;
-        secondPiece = aux;
-        switchSpeed();
+    public void switchPiece() {
+        if (secondPiece != null) {
+            st.secondBool = !st.secondBool;
+            TetrixPiece aux = activePiece;
+            activePiece = secondPiece;
+            secondPiece = aux;
+            switchSpeed();
         }
     }
 
-    public PowerUp getActivePowerUp(){
+    public PowerUp getActivePowerUp() {
         return activePowerUp;
     }
-    public void switchSpeed(){
+
+    public void switchSpeed() {
         int aux2 = st.getGameSpeed();
         st.setGameSpeed(st.getSecondPieceSpeed());
         st.setSecondPieceSpeed(aux2);
@@ -420,113 +429,119 @@ public class CustomView extends View {
 
     public void linesUpdate(TetrixPiece piece) {//coordinates of the last piece set
         piezas.add(piece);
-        CubeSprite []cubos=piece.getSprites();
+        CubeSprite[] cubos = piece.getSprites();
 
-        for(int i=0;i<4;i++) {   //Recorre los sprites de la figura última posicionada
-            if(cubos[i]!=null){
-                int cy = cubos[i].getY()/cubos[i].getLength();
+        for (int i = 0; i < 4; i++) {   //Recorre los sprites de la figura última posicionada
+            if (cubos[i] != null) {
+                int cy = cubos[i].getY() / cubos[i].getLength();
                 LinesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
             }
         }
         CubeSprite[] cube = activePiece.getSprites();
-        int aux=(cheight/cube[0].getLength()+1);
-        int aux2=(cwidth/cube[0].getLength());
+        int aux = (cheight / cube[0].getLength() + 1);
+        int aux2 = (cwidth / cube[0].getLength());
         numLines = 0;
-        for(int j=0;j<aux;j++){      //Recorre todas las líneas de la matriz
-            if(LinesInfo[j]==aux2){
-               deleteLine(j,cubelength,piece.getInterSpace());
+        for (int j = 0; j < aux; j++) {      //Recorre todas las líneas de la matriz
+            if (LinesInfo[j] == aux2) {
+                deleteLine(j, cubelength, piece.getInterSpace());
                 j--;
             }
         }
-        if(numLines==1){
-            enableRandom=false;
+        if (numLines == 1) {
+            enableRandom = false;
             Bitmap oldBmp = bmp;
-            random = (int)(Math.random()*3);
-            if(ma.thm==1){random+=3;}
-            auxSetCubeSprite(random);
-            for(TetrixPiece p:piezas){
-                if(p.isPowerUp()==0)
-                p.setBitmap(bmp);
+            random = (int) (Math.random() * 3);
+            if (ma.thm == 1) {
+                random += 3;
             }
-            bmp=oldBmp;
+            auxSetCubeSprite(random);
+            for (TetrixPiece p : piezas) {
+                if (p.isPowerUp() == 0)
+                    p.setBitmap(bmp);
+            }
+            bmp = oldBmp;
             setCubeSpriteColor(random);
             this.invalidate();
-        }else if(numLines>1){
-            enableRandom=true;
+        } else if (numLines > 1) {
+            enableRandom = true;
             Bitmap oldBmp = bmp;
-            for(TetrixPiece p:piezas){
-                int palette = (int)(Math.random()*3);
-                if(ma.thm==1){palette+=3;}
+            for (TetrixPiece p : piezas) {
+                int palette = (int) (Math.random() * 3);
+                if (ma.thm == 1) {
+                    palette += 3;
+                }
                 auxSetCubeSprite(palette);
-                if(p.isPowerUp()==0)
-                p.setBitmap(bmp);
+                if (p.isPowerUp() == 0)
+                    p.setBitmap(bmp);
             }
-            bmp=oldBmp;
+            bmp = oldBmp;
         }
 
         updateScore(numLines);
     }
 
-    private void deleteLine(int linea, int spriteLength, int interSpace){   //eliminar la línea completa y bajar las piezas
+    private void deleteLine(int linea, int spriteLength, int interSpace) {   //eliminar la línea completa y bajar las piezas
         numLines++;
-        LinesInfo[linea]=0;             //refinar si es necesario
-        int spriteSpace=(spriteLength+interSpace);  //te situas en la altura deseada para borrar horizontalmente
-        int y=spriteSpace*linea;
+        LinesInfo[linea] = 0;             //refinar si es necesario
+        int spriteSpace = (spriteLength + interSpace);  //te situas en la altura deseada para borrar horizontalmente
+        int y = spriteSpace * linea;
 
-        for(TetrixPiece p:piezas){
-           if(p.removeCube(y)){
-               if(p.isPowerUp()==1){
-                   x2PowerUp paux = (x2PowerUp) p;
-                   paux.start();
-               }else if(p.isPowerUp()==2){
-                   tNTPowerUp paux = (tNTPowerUp) p;
-                   if(!paux.isUsed()) {
-                       paux.setUsed();
-                       deleteLine(linea - 1, spriteLength, interSpace);
-                   }
-               } else if(p.isPowerUp()==3){
-                   slowPowerUp paux = (slowPowerUp) p;
-                   paux.start();
-               }
-           }
-        }
-
-        drop(y,spriteSpace);
-
-        for(int i=linea;i>0;i--){        //checkear por bugs mañana
-            LinesInfo[i]=LinesInfo[i-1];
-        }
-        LinesInfo[0]=0;
-    }
-
-    private void drop (int y, int spriteSpace){
-            for (TetrixPiece p : piezas) {
-                CubeSprite []cubos=p.getSprites();
-                for(int i=0;i<4;i++) {
-                    if(cubos[i]!=null&&cubos[i].getY()<y){
-                        cubos[i].setY(cubos[i].getY()+spriteSpace);
+        for (TetrixPiece p : piezas) {
+            if (p.removeCube(y)) {
+                if (p.isPowerUp() == 1) {
+                    x2PowerUp paux = (x2PowerUp) p;
+                    paux.start();
+                } else if (p.isPowerUp() == 2) {
+                    tNTPowerUp paux = (tNTPowerUp) p;
+                    if (!paux.isUsed()) {
+                        paux.setUsed();
+                        deleteLine(linea - 1, spriteLength, interSpace);
                     }
+                } else if (p.isPowerUp() == 3) {
+                    slowPowerUp paux = (slowPowerUp) p;
+                    paux.start();
                 }
             }
+        }
+
+        drop(y, spriteSpace);
+
+        for (int i = linea; i > 0; i--) {        //checkear por bugs mañana
+            LinesInfo[i] = LinesInfo[i - 1];
+        }
+        LinesInfo[0] = 0;
+    }
+
+    private void drop(int y, int spriteSpace) {
+        for (TetrixPiece p : piezas) {
+            CubeSprite[] cubos = p.getSprites();
+            for (int i = 0; i < 4; i++) {
+                if (cubos[i] != null && cubos[i].getY() < y) {
+                    cubos[i].setY(cubos[i].getY() + spriteSpace);
+                }
+            }
+        }
     }
 
     public void downTop() {
-        top=top+cubelength*2;
+        top = top + cubelength * 2;
     }
-    public void gameOver(){
+
+    public void gameOver() {
         for (TetrixPiece p : piezas) {
-            CubeSprite []cubos=p.getSprites();
-            if((p!=activePiece)&&(p!=secondPiece)&&(p!=activePowerUp)) {
+            CubeSprite[] cubos = p.getSprites();
+            if ((p != activePiece) && (p != secondPiece) && (p != activePowerUp)) {
                 for (int i = 0; i < 4; i++) {
                     if (cubos[i] != null && cubos[i].getY() <= top) {
-                        if(gameMode==0)
-                            st.running=false;
+                        if (gameMode == 0)
+                            st.running = false;
                         else
-                            sta.running=false;
+                            sta.running = false;
                         this.invalidate();
                         try {
                             sleep(1000);
-                        }catch(Exception e){}
+                        } catch (Exception e) {
+                        }
                         ma.changeGameOver();
                         break;
                     }
@@ -534,52 +549,54 @@ public class CustomView extends View {
             }
         }
     }
-    public void fastFall(){
-        if(gameMode==0)
+
+    public void fastFall() {
+        if (gameMode == 0)
             st.setGameSpeed(1);
         else
             sta.setGameSpeed(1);
     }
 
-    public void resetFall(){
-        if(gameMode==0)
+    public void resetFall() {
+        if (gameMode == 0)
             st.setGameSpeed(7);
         else
             sta.setGameSpeed(7);
     }
 
-    private void setCubeSpriteColor(int palette){
+    private void setCubeSpriteColor(int palette) {
         ma.selectPalette(palette);
         auxSetCubeSprite(palette);
     }
 
-    public void auxSetCubeSprite(int palette){
-        switch(palette){
-            case 0: case 3:{
+    public void auxSetCubeSprite(int palette) {
+        switch (palette) {
+            case 0:
+            case 3: {
                 bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespritey);
                 break;
             }
-            case 1:{
+            case 1: {
                 bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespriteb);
                 break;
             }
-            case 2:{
+            case 2: {
                 bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespritep);
                 break;
             }
-            case 4:{
+            case 4: {
                 bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespriteo);
                 break;
             }
-            case 5:{
+            case 5: {
                 bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cubespriteg);
                 break;
             }
         }
     }
 
-    public boolean isSecondThreadRunnig(){
-        if(gameMode==0)
+    public boolean isSecondThreadRunnig() {
+        if (gameMode == 0)
             return st.running;
         else
             return sta.running;
