@@ -182,7 +182,7 @@ public class CustomView extends View {
     }
 
     public void randomSecondPiece(Bitmap bmp) {
-        int aux =(r.nextInt(7));
+        int aux = (r.nextInt(7));
         randomSecondPiece(bmp, aux);
     }
 
@@ -439,28 +439,31 @@ public class CustomView extends View {
             updateSprite(cubos, i);
         }
     }
-    public void deleteSprite(int[] linesInfo, int aux, int aux2, int i,int j, TetrixPiece piece) {
+
+    public void deleteSprite(int[] linesInfo, int aux, int aux2, int i, int j, TetrixPiece piece) {
         if (i < aux) {
             if (linesInfo[i] == aux2) {
                 deleteLine(j, cubelength, piece.getInterSpace());
             }
             i++;
-            deleteSprite(linesInfo, aux, aux2, i, j,piece);
+            deleteSprite(linesInfo, aux, aux2, i, j, piece);
         }
     }
+
     public void linesUpdate(TetrixPiece piece) {//coordinates of the last piece set
         piezas.add(piece);
         CubeSprite[] cubos = piece.getSprites();
 
         int i = 0;
-        updateSprite(cubos,i);
+        updateSprite(cubos, i);
 
         CubeSprite[] cube = activePiece.getSprites();
         int aux = (cheight / cube[0].getLength() + 1);
         int aux2 = (cwidth / cube[0].getLength());
         numLines = 0;
 
-        deleteSprite(linesInfo, aux, aux2, 0,0,piece);
+        deleteSprite(linesInfo, aux, aux2, 0, 0, piece);
+
         if (numLines == 1) {
             enableRandom = false;
             Bitmap oldBmp = bmp;
@@ -480,7 +483,7 @@ public class CustomView extends View {
             enableRandom = true;
             Bitmap oldBmp = bmp;
             for (TetrixPiece p : piezas) {
-                int palette =(r.nextInt(3));
+                int palette = (r.nextInt(3));
                 if (ma.thm == 1) {
                     palette += 3;
                 }
@@ -540,26 +543,25 @@ public class CustomView extends View {
     public void downTop() {
         top = top + cubelength * 2;
     }
-
-    public void gameOver() {
+    public void gameModeRefactor(CubeSprite[] cubes) throws InterruptedException {
+        for (int i = 0; i < 4; i++) {
+            if (cubes[i] != null && cubes[i].getY() <= top) {
+                if (gameMode == 0)
+                    st.running = false;
+                else
+                    sta.running = false;
+                this.invalidate();
+                sleep(1000);
+                ma.changeGameOver();
+                break;
+            }
+        }
+    }
+    public void gameOver() throws InterruptedException {
         for (TetrixPiece p : piezas) {
             CubeSprite[] cubos = p.getSprites();
             if ((p != activePiece) && (p != secondPiece) && (p != activePowerUp)) {
-                for (int i = 0; i < 4; i++) {
-                    if (cubos[i] != null && cubos[i].getY() <= top) {
-                        if (gameMode == 0)
-                            st.running = false;
-                        else
-                            sta.running = false;
-                        this.invalidate();
-                        try {
-                            sleep(1000);
-                        } catch (Exception e) {
-                        }
-                        ma.changeGameOver();
-                        break;
-                    }
-                }
+                gameModeRefactor(cubos);
             }
         }
     }
@@ -583,7 +585,7 @@ public class CustomView extends View {
         auxSetCubeSprite(palette);
     }
 
-    private void painting(Integer typeCube){
+    private void painting(Integer typeCube) {
         bmp = BitmapFactory.decodeResource(getResources(), typeCube);
     }
 
