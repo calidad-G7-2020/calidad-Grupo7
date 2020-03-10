@@ -175,7 +175,7 @@ public class CustomView extends View {
             default:
                 activePiece = null;
         }
-        if (activePiece != null) cactivePiece.changeYSpeed(bmp.getWidth());
+        if (activePiece != null) activePiece.changeYSpeed(bmp.getWidth());
     }
 
     public void randomSecondPiece(Bitmap bmp) {
@@ -427,16 +427,30 @@ public class CustomView extends View {
         st.setSecondPieceSpeed(aux2);
     }
 
-    public void linesUpdate(TetrixPiece piece) {//coordinates of the last piece set
-        piezas.add(piece);
-        CubeSprite[] cubos = piece.getSprites();
-
-        for (int i = 0; i < 4; i++) {   //Recorre los sprites de la figura última posicionada
+    public void ForToSwitch(CubeSprite[] cubos, int i) {
+        if (i < 4) {
             if (cubos[i] != null) {
                 int cy = cubos[i].getY() / cubos[i].getLength();
                 LinesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
             }
+            i++;
+            ForToSwitch(cubos, i);
         }
+    }
+
+    public void linesUpdate(TetrixPiece piece) {//coordinates of the last piece set
+        piezas.add(piece);
+        CubeSprite[] cubos = piece.getSprites();
+
+/*      for (int i = 0; i < 4; i++) {   //Recorre los sprites de la figura última posicionada
+            if (cubos[i] != null) {
+                int cy = cubos[i].getY() / cubos[i].getLength();
+                LinesInfo[cy]++;  //Esta línea tiene un nuevo sprite.
+            }
+        }*/
+        int i = 0;
+        ForToSwitch(cubos,i);
+
         CubeSprite[] cube = activePiece.getSprites();
         int aux = (cheight / cube[0].getLength() + 1);
         int aux2 = (cwidth / cube[0].getLength());
