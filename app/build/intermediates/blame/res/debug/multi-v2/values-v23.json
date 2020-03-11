@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\GitKraken\\calidad-Grupo7\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Guileath\\Documents\\calidad-Grupo7\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jousp\\.gradle\\caches\\transforms-2\\files-2.1\\d7a13f780fc8ce7597f75b89df33ec9e\\appcompat-1.0.2\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Guileath\\.gradle\\caches\\transforms-2\\files-2.1\\d328cdf90f44f6fdee60a421aece0b61\\appcompat-1.0.2\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

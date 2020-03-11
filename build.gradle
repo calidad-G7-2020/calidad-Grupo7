@@ -7,7 +7,7 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.android.tools.build:gradle:3.6.1'
         
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -22,8 +22,7 @@ sonarqube {
         property "sonar.projectKey", "calidad-G7-2020_calidad-Grupo7"
         property "sonar.organization", "calidad-g7-2020"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.login", "a6e42f92d088327c83c720212f870da1e227a7b1"
-        property "sonar.branch.name", "develop"
+        property "sonar.login", "691e4432525d7d9ad9243b4784c6f9611b4939ed"
     }
 }
 allprojects {

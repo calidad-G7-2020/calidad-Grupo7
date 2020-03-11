@@ -1,0 +1,26 @@
+language: android
+
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-29.0.2
+    - android-29
+  licenses:
+    - ".+"
+
+before_install:
+  - chmod +x ./gradlew
+
+addons:
+  sonarcloud:
+    organization: calidad-g7-2020
+    token:
+      secure: 691e4432525d7d9ad9243b4784c6f9611b4939ed
+
+script:
+  - echo "Travis branch is $TRAVIS_BRANCH"
+  - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
+  - ./gradlew build
+  - ./gradlew sonarqube
