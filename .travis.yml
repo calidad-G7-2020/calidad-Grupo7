@@ -31,4 +31,5 @@ branches:
   only:
     - feature/travis2
     - master
+    - develop
     - /.*/
