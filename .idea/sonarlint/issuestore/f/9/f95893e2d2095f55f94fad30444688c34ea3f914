@@ -1,0 +1,16 @@
+
+n
+java:S1104"SMake running a static final constant or non-public and provide accessors if needed.(§’¹éùÿÿÿÿ
+E
+java:S1148k"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ç­ß¬Œ.
+c
+java:S2142j"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ç­ß¬Œ.
+E
+java:S1148W"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÈŒß¬Œ.
+s
+java:S1104"XMake powerUpSpeed a static final constant or non-public and provide accessors if needed.(˜ÇÁ›ûÿÿÿÿ
+C	java:S1087")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ
+c
+java:S2142V"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÈŒß¬Œ.
+h
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 69 to the 15 allowed.(“–ýþ

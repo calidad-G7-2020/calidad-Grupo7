@@ -1,51 +1,62 @@
 
-/com.mainpakage.tetrix.CustomView#updateScore()Ip
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javai i("6*´
-2p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(´
-±
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(/
-p*com.mainpakage.tetrix.TetrixPieces.PowerUp"__id*
-""*
-5
-1*È
-4p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javam- m(.ä
-á
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javam m(/4
-paux,com.mainpakage.tetrix.TetrixPieces.x2PowerUp"__id*1
-/
-p*com.mainpakage.tetrix.TetrixPieces.PowerUpäá
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javan n("
-%2boolean"java.lang.Thread#isAlive()Z*6
-4
-paux,com.mainpakage.tetrix.TetrixPieces.x2PowerUp2	isAlive()*
-2*ı
-5p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javal l(ıú
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javal l(	
-%1int";com.mainpakage.tetrix.TetrixPieces.TetrixPiece#isPowerUp()I*1
-/
-p*com.mainpakage.tetrix.TetrixPieces.PowerUp2isPowerUp()*
-2
-4*Â
-6p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(!Å
-Â
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javak k(!
-%0java.util.List"__id*2*0"
+2com.mainpakage.tetrix.CustomView#colisionActive()Zr
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java (!"3*–
+2r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java… …()ê
+ç
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java…1 …(<4
+%4.com.mainpakage.tetrix.tetrixpieces.TetrixPiece"__id*5*3"
  com.mainpakage.tetrix.CustomView"
-
-powerUps*
-2*ñ
-1p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javar r("z
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javar r(!
+activePieceª§
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java… …(=
+%5boolean"”com.mainpakage.tetrix.CustomView#isCollisionPiece(Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;)Z*$"
+ com.mainpakage.tetrix.CustomView*9
+7
+nueva.com.mainpakage.tetrix.tetrixpieces.TetrixPiece*6
+4
+%4.com.mainpakage.tetrix.tetrixpieces.TetrixPiece2risCollisionPiece(Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;)*
+1*—
+3r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java‚ ‚('ê
+ç
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java‚ ‚('4
+%0.com.mainpakage.tetrix.tetrixpieces.TetrixPiece"__id*5*3"
+ com.mainpakage.tetrix.CustomView"
+secondPieceË
+È
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java‚1 ‚(4
+%1android.graphics.Bitmap"__id*-*+"
+ com.mainpakage.tetrix.CustomView"
+bmpüù
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java‚ ‚(;4
+%2.com.mainpakage.tetrix.tetrixpieces.TetrixPiece"•com.mainpakage.tetrix.tetrixpieces.TetrixPiece#copyDown(Landroid/graphics/Bitmap;Landroid/view/View;)Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;*6
+4
+%0.com.mainpakage.tetrix.tetrixpieces.TetrixPiece*
+
+%1android.graphics.Bitmap*$"
+ com.mainpakage.tetrix.CustomView26copyDown(Landroid/graphics/Bitmap;Landroid/view/View;)î
+ë
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java‚ ‚(<7
+nueva.com.mainpakage.tetrix.tetrixpieces.TetrixPiece"__id*6
+4
+%2.com.mainpakage.tetrix.tetrixpieces.TetrixPieceê
+ç
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java„ „(4
+%3.com.mainpakage.tetrix.tetrixpieces.TetrixPiece"__id*5*3"
+ com.mainpakage.tetrix.CustomView"
+activePiece*
+2
+1*õ
+1r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java† †("|
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.java† †(
 ""B$"
  com.mainpakage.tetrix.CustomView

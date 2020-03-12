@@ -1,16 +1,48 @@
 
-fcom.mainpakage.tetrix.TetrixPieces.JPiece#getSprites()[Lcom/mainpakage/tetrix/TetrixPieces/CubeSprite;{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.javaå å(&"1*≥
-1{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.javaç ç(˜
-Ù
-{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.javaç ç(5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*8*6+
-)com.mainpakage.tetrix.TetrixPieces.JPiece"
-cubes"∂
-{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.javaç ç(7
-5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]B-+
-)com.mainpakage.tetrix.TetrixPieces.JPiece
+?com.mainpakage.tetrix.PlayerData#compareTo(Ljava/lang/Object;)Ip
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java# #("paramAnnotations*Ò
+2p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java( (("z
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java( ((
+""*Ò
+4p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java& &("z
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java& &(
+""*¿
+5p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java$& $('Ω
+∫
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java$ $(('
+aux com.mainpakage.tetrix.PlayerData"__id*
+
+ojava.lang.Object*	
+2
+4
+1*È
+paramAnnotationsp
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java# #("∏
+µ
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java" "(
+%0"
+__annotate*
+java.lang.Override*
+
+ojava.lang.Object¢
+ü
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java#  #(!
+ojava.lang.Object"__annotation*
+
+%0*
+5*Ò
+1p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java* *("z
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java* *(
+"":
+ojava.lang.ObjectB$"
+ com.mainpakage.tetrix.PlayerData

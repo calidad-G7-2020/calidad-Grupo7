@@ -1,16 +1,9 @@
 
-icom.mainpakage.tetrix.TetrixPieces.LinePiece#getSprites()[Lcom/mainpakage/tetrix/TetrixPieces/CubeSprite;|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javal l(""1*¹
-1|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javam m(û
-ø
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javam m(5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*;*9.
-,com.mainpakage.tetrix.TetrixPieces.LinePiece"
-cubes"·
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LinePiece.javam m(7
-5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]B0.
-,com.mainpakage.tetrix.TetrixPieces.LinePiece
+9com.mainpakage.tetrix.tetrixpieces.LinePiece#getStatus()I~
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/LinePiece.javaÅ Å("1*Ž
+1~
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/LinePiece.javaÆ Æ("ˆ
+~
+rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/LinePiece.javaÆ Æ(
+""B0.
+,com.mainpakage.tetrix.tetrixpieces.LinePiece

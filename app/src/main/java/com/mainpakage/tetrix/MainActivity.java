@@ -18,6 +18,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Random;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     int thm;
     int palette;
     int gameMode;
+    Random randNum;
+    static final String THEME ="theme";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
         Bundle bAux = getIntent().getExtras();
         gameMode = bAux.getInt("GameMode");
-        palette=(int)(Math.random()*3); //  //For each theme there are 3 models of pieces
-        thm=bAux.getInt("theme");
+        palette=(randNum.nextInt()); //  //For each theme there are 3 models of pieces
+        thm=bAux.getInt(THEME);
 
         //Music initializing
         tetrixMusic = MediaPlayer.create(this,R.raw.remix);
@@ -98,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
                 else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    customView.girar(customView.getActivePiece());
+                    customView.moverIzqDerGirar(customView.getActivePiece(),3);
                     turn.setBackgroundResource(rotate);
 
                     return true;
@@ -122,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
                 else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    customView.moverDerechaActiva(customView.getActivePiece());
+                    customView.moverIzqDerGirar(customView.getActivePiece(),2);
                     right.setBackgroundResource(r);
                     return true;
                 }
@@ -145,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
                 else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    customView.moverIzquierdaActiva(customView.getActivePiece());
+                    customView.moverIzqDerGirar(customView.getActivePiece(),1);
                     left.setBackgroundResource(l);
                     return true;
                 }
@@ -206,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         sc = (TextView) findViewById(R.id.valorPuntuacion);
         iv= (ImageView) findViewById(R.id.nextpiecefig);
         Intent intent = new Intent (customView.getContext(), MainActivity.class);
-        intent.putExtra("theme", thm);
+        intent.putExtra(THEME, thm);
         if(gameMode==0)
             customView.getSt().start();
         else{
@@ -235,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else{
                 intent = new Intent (customView.getContext(), QuickReboot.class);
-                intent.putExtra("theme", thm);
+                intent.putExtra(THEME, thm);
             }
             intent.putExtra("Score", sc.getText().toString());
             intent.putExtra("GameMode",gameMode);
@@ -319,7 +323,10 @@ public class MainActivity extends AppCompatActivity {
                 bmpPiece4 = BitmapFactory.decodeResource(getResources(), R.drawable.zg);
                 bmpPiece5 = BitmapFactory.decodeResource(getResources(), R.drawable.jg);
                 bmpPiece6 = BitmapFactory.decodeResource(getResources(), R.drawable.lg);
-                break;}
+                break;
+            }
+            default:
+                break;
         }
     }
     protected void enableSwitch(){

@@ -1,0 +1,15 @@
+
+œ
+java:S1186r"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œƒƒ©ùÿÿÿÿ
+E
+java:S1659"*Declare "gameOverText" on a separate line.(ýÊŸ¸øÿÿÿÿ
+Q
+java:S1117ƒ":Rename "picCam" which hides the field declared at line 33.(°‡ä‡
+<
+java:S1068"&Remove this unused "ok" private field.(†óÞ°
+u
+java:S1450#"ZRemove the "preferences" field and declare it as a local variable in the relevant methods.(„€Àóûÿÿÿÿ
+B
+java:S1659"'Declare "scoreText" on a separate line.(ýÊŸ¸øÿÿÿÿ
+D
+java:S1659")Declare "rankingText" on a separate line.(ýÊŸ¸øÿÿÿÿ

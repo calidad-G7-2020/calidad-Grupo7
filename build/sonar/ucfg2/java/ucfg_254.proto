@@ -1,16 +1,38 @@
 
-acom.mainpakage.tetrix.CustomView#getActivePiece()Lcom/mainpakage/tetrix/TetrixPieces/TetrixPiece;p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaK K(%"1*ç
-1p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaL L(Ë
-Â
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaL L(4
-%0.com.mainpakage.tetrix.TetrixPieces.TetrixPiece"__id*5*3"
- com.mainpakage.tetrix.CustomView"
-activePiece"™
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaL L(6
-4
-%0.com.mainpakage.tetrix.TetrixPieces.TetrixPieceB$"
+ëcom.mainpakage.tetrix.CustomView#isCollisionCube(Lcom/mainpakage/tetrix/tetrixpieces/CubeSprite;Lcom/mainpakage/tetrix/tetrixpieces/CubeSprite;)Zr
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaæ æ(#"3*Ñ
+2r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø< ø(GÅ˛
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø< ø(N	
+%2int"5com.mainpakage.tetrix.tetrixpieces.CubeSprite#getY()I*>
+<
+cubeSprite1-com.mainpakage.tetrix.tetrixpieces.CubeSprite2getY()Å˛
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaøR ø(d	
+%3int"5com.mainpakage.tetrix.tetrixpieces.CubeSprite#getY()I*>
+<
+cubeSprite2-com.mainpakage.tetrix.tetrixpieces.CubeSprite2getY()*
+1*á
+3r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø ø(Å˛
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø ø("	
+%0int"5com.mainpakage.tetrix.tetrixpieces.CubeSprite#getX()I*>
+<
+cubeSprite1-com.mainpakage.tetrix.tetrixpieces.CubeSprite2getX()Å˛
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø& ø(8	
+%1int"5com.mainpakage.tetrix.tetrixpieces.CubeSprite#getX()I*>
+<
+cubeSprite2-com.mainpakage.tetrix.tetrixpieces.CubeSprite2getX()*
+2
+1*ı
+1r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø ø(f"|
+r
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/CustomView.javaø ø(f
+"":<
+cubeSprite1-com.mainpakage.tetrix.tetrixpieces.CubeSprite:<
+cubeSprite2-com.mainpakage.tetrix.tetrixpieces.CubeSpriteB$"
  com.mainpakage.tetrix.CustomView

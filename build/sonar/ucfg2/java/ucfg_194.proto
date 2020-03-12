@@ -1,48 +1,9 @@
 
-?com.mainpakage.tetrix.PlayerData#compareTo(Ljava/lang/Object;)Ip
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java# #("paramAnnotations*ñ
-2p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java( (("z
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java( ((
-""*ñ
-4p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java& &("z
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java& &(
-""*À
-5p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java$& $('½
-º
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java$ $(('
-aux com.mainpakage.tetrix.PlayerData"__id*
-
-ojava.lang.Object*	
-2
-4
-1*é
-paramAnnotationsp
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java# #("¸
-µ
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java" "(
-%0"
-__annotate*
-java.lang.Override*
-
-ojava.lang.Object¢
-Ÿ
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java#  #(!
-ojava.lang.Object"__annotation*
-
-%0*
-5*ñ
-1p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java* *("z
-p
-fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java* *(
-"":
-ojava.lang.ObjectB$"
- com.mainpakage.tetrix.PlayerData
+6com.mainpakage.tetrix.tetrixpieces.LPiece#isPowerUp()I{
+oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/LPiece.javañ ñ("1*ˆ
+1{
+oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/LPiece.javaò ò("…
+{
+oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/LPiece.javaò ò(
+""B-+
+)com.mainpakage.tetrix.tetrixpieces.LPiece

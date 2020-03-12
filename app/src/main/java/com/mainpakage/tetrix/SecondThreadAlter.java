@@ -1,6 +1,6 @@
 package com.mainpakage.tetrix;
 
-import com.mainpakage.tetrix.TetrixPieces.CubeSprite;
+import com.mainpakage.tetrix.tetrixpieces.CubeSprite;
 
 public class SecondThreadAlter extends Thread{
     private CustomView cv;

@@ -1,9 +1,117 @@
 
-6com.mainpakage.tetrix.TetrixPieces.LPiece#isPowerUp()I{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LPiece.javaÒ Ò("1*à
-1{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LPiece.javaÚ Ú("Ö
-{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/LPiece.javaÚ Ú(
-""B-+
-)com.mainpakage.tetrix.TetrixPieces.LPiece
+\com.mainpakage.tetrix.MainActivity$1#onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Zr
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javab b(""paramAnnotations*Å
+2r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javai i(ﬂ
+‹
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javai i(&
+%7 com.mainpakage.tetrix.CustomView"__id*8*6&
+$com.mainpakage.tetrix.MainActivity$1"
+
+customViewﬂ
+‹
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javai0 i(:&
+%8 com.mainpakage.tetrix.CustomView"__id*8*6&
+$com.mainpakage.tetrix.MainActivity$1"
+
+customViewÃ…
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javai0 i(K4
+%9.com.mainpakage.tetrix.tetrixpieces.TetrixPiece"acom.mainpakage.tetrix.CustomView#getActivePiece()Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;*(
+&
+%8 com.mainpakage.tetrix.CustomView2getActivePiece()òï
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javai i(N
+%10void"ecom.mainpakage.tetrix.CustomView#moverIzqDerGirar(Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;I)V*(
+&
+%7 com.mainpakage.tetrix.CustomView*6
+4
+%9.com.mainpakage.tetrix.tetrixpieces.TetrixPiece*22CmoverIzqDerGirar(Lcom/mainpakage/tetrix/tetrixpieces/TetrixPiece;I)€ÿ
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javaj j(6
+%11void"+android.view.View#setBackgroundResource(I)V*
+""*
+""2setBackgroundResource(I)"|
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javal l( 
+""*
+3r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javah h(€ÿ
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javah h(*	
+%5int"%android.view.MotionEvent#getAction()I*#
+!
+eventandroid.view.MotionEvent2getAction()ê
+ç
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javah. h(C	
+%6int"__id*
+""*
+2
+1*“
+4r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javad d(⁄◊
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javad d(:
+
+%4void"+android.view.View#setBackgroundResource(I)V*
+""*
+""2setBackgroundResource(I)"|
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javaf f( 
+""*
+5r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javac c(€ÿ
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javac c(%	
+%0int"%android.view.MotionEvent#getAction()I*#
+!
+eventandroid.view.MotionEvent2getAction()ê
+ç
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javac) c(@	
+%1int"__id*
+""*
+3
+4*Ì
+paramAnnotationsr
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javab" b(=ª
+∏
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javaa a(
+%2"
+__annotate*
+java.lang.Override*
+
+vandroid.view.View•
+¢
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javab( b()
+vandroid.view.View"__annotation*
+
+%2∆
+√
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javaa a(
+%3"
+__annotate*
+java.lang.Override*#
+!
+eventandroid.view.MotionEvent∞
+≠
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javab7 b(<!
+eventandroid.view.MotionEvent"__annotation*
+
+%3*
+5*ı
+1r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javan n("|
+r
+hC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/MainActivity.javan n(
+"":
+vandroid.view.View:!
+eventandroid.view.MotionEventB(&
+$com.mainpakage.tetrix.MainActivity$1

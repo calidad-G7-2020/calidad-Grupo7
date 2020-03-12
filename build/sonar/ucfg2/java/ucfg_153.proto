@@ -1,72 +1,72 @@
 
-;com.mainpakage.tetrix.TetrixPieces.x2PowerUp#removeCube(I)Z|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java8 8("5"1*æ
-3|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java< <(û
-ø
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java< <(5
-%5/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*;*9.
-,com.mainpakage.tetrix.TetrixPieces.x2PowerUp"
-cubesÜ
-Ù
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java< <(
+=com.mainpakage.tetrix.tetrixpieces.slowPowerUp#removeCube(I)Z~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java8 8("5"1*î
+3~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java< <(ÿ
+ü
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java< <(5
+%5/com.mainpakage.tetrix.tetrixpieces.CubeSprite[]"__id*=*;0
+.com.mainpakage.tetrix.tetrixpieces.slowPowerUp"
+cubesÞ
+Û
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java< <(
 %6"
 __arraySet*7
 5
-%5/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]*
+%5/com.mainpakage.tetrix.tetrixpieces.CubeSprite[]*
 ""*
 ""*
 5
-1*•
-4|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;($û
-ø
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;($5
-%2/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*;*9.
-,com.mainpakage.tetrix.TetrixPieces.x2PowerUp"
-cubesƒ
-€
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;('3
-%3-com.mainpakage.tetrix.TetrixPieces.CubeSprite"
+1*Ÿ
+4~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;($ÿ
+ü
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;($5
+%2/com.mainpakage.tetrix.tetrixpieces.CubeSprite[]"__id*=*;0
+.com.mainpakage.tetrix.tetrixpieces.slowPowerUp"
+cubes…
+‚
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;('3
+%3-com.mainpakage.tetrix.tetrixpieces.CubeSprite"
 __arrayGet*7
 5
-%2/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]*
-""‚ÿ
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;(.	
-%4int"5com.mainpakage.tetrix.TetrixPieces.CubeSprite#getY()I*5
+%2/com.mainpakage.tetrix.tetrixpieces.CubeSprite[]*
+""„
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;(.	
+%4int"5com.mainpakage.tetrix.tetrixpieces.CubeSprite#getY()I*5
 3
-%3-com.mainpakage.tetrix.TetrixPieces.CubeSprite2getY()*	
+%3-com.mainpakage.tetrix.tetrixpieces.CubeSprite2getY()*	
 3
 5
-1*
-5|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;(û
-ø
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;(5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*;*9.
-,com.mainpakage.tetrix.TetrixPieces.x2PowerUp"
-cubesƒ
-€
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java; ;(3
-%1-com.mainpakage.tetrix.TetrixPieces.CubeSprite"
+1*˜
+5~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;(ÿ
+ü
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;(5
+%0/com.mainpakage.tetrix.tetrixpieces.CubeSprite[]"__id*=*;0
+.com.mainpakage.tetrix.tetrixpieces.slowPowerUp"
+cubes…
+‚
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java; ;(3
+%1-com.mainpakage.tetrix.tetrixpieces.CubeSprite"
 __arrayGet*7
 5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]*
+%0/com.mainpakage.tetrix.tetrixpieces.CubeSprite[]*
 ""*	
 4
 5
-1*Š
-1|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java@ @("†
-|
-rC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/x2PowerUp.java@ @(
+1*Ž
+1~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java@ @("ˆ
+~
+tC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/tetrixpieces/slowPowerUp.java@ @(
 "":
-""B0.
-,com.mainpakage.tetrix.TetrixPieces.x2PowerUp
+""B20
+.com.mainpakage.tetrix.tetrixpieces.slowPowerUp

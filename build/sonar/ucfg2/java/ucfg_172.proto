@@ -1,72 +1,31 @@
 
-8com.mainpakage.tetrix.TetrixPieces.JPiece#removeCube(I)Zy
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.javax x(!"5"1*Ú
-3y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java| |(õ
-ò
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java| |(5
-%5/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*8*6+
-)com.mainpakage.tetrix.TetrixPieces.JPiece"
-cubesÙ
-Ö
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java| |(!
-%6"
-__arraySet*7
-5
-%5/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]*
-""*
-""*
-5
-1*†
-4y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{# {((õ
-ò
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{# {((5
-%2/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*8*6+
-)com.mainpakage.tetrix.TetrixPieces.JPiece"
-cubes€
-ý
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{# {(+3
-%3-com.mainpakage.tetrix.TetrixPieces.CubeSprite"
-__arrayGet*7
-5
-%2/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]*
-""ÿü
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{# {(2	
-%4int"5com.mainpakage.tetrix.TetrixPieces.CubeSprite#getY()I*5
-3
-%3-com.mainpakage.tetrix.TetrixPieces.CubeSprite2getY()*	
-3
-5
-1*„
-5y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{ {(õ
-ò
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{ {(5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]"__id*8*6+
-)com.mainpakage.tetrix.TetrixPieces.JPiece"
-cubes€
-ý
-y
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java{ {(3
-%1-com.mainpakage.tetrix.TetrixPieces.CubeSprite"
-__arrayGet*7
-5
-%0/com.mainpakage.tetrix.TetrixPieces.CubeSprite[]*
-""*	
-4
-5
-1*ˆ
-1{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java€ €("…
-{
-oC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/TetrixPieces/JPiece.java€ €(
-"":
-""B-+
-)com.mainpakage.tetrix.TetrixPieces.JPiece
+=com.mainpakage.tetrix.PlayerData#toString()Ljava/lang/String;p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java ("1*Ç
+1p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java (É
+Æ
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java (
+%0java.lang.String"__id*4*2"
+ com.mainpakage.tetrix.PlayerData"
+
+playerName¸
+µ
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java (#
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+/¹
+¶
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java (3
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+"""Œ
+p
+fC:/Users/Diego/Documents/GitHub/calidad-Grupo7/app/src/main/java/com/mainpakage/tetrix/PlayerData.java (4
+
+%2java.lang.StringB$"
+ com.mainpakage.tetrix.PlayerData

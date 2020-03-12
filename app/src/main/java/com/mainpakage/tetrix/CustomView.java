@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 
-import com.mainpakage.tetrix.TetrixPieces.*;
+import com.mainpakage.tetrix.tetrixpieces.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,6 @@ public class CustomView extends View {
     int score;
     private SecondThreat st;
     private SecondThreadAlter sta;
-    private static int lineScore = 30;
     List<TetrixPiece> piezas;
     private int nextPiece;
     private TetrixPiece activePiece;
@@ -52,6 +51,14 @@ public class CustomView extends View {
     }
     public SecondThreadAlter getSta() {
         return sta;
+    }
+
+    public void setSt(SecondThreat st) {
+        this.st = st;
+    }
+
+    public void setSta(SecondThreadAlter sta) {
+        this.sta = sta;
     }
 
     public CustomView(Context context, AttributeSet attrs) {
@@ -99,11 +106,11 @@ public class CustomView extends View {
         ma = mainActivity;
         this.gameMode = gameMode;
         if (gameMode == 0) {
-            st = new SecondThreat(this);
-            sta = null;
+            setSt(new SecondThreat(this));
+            setSta(null);
         } else {
-            st = null;
-            sta = new SecondThreadAlter(this);
+            setSt(null);
+            setSta(new SecondThreadAlter(this));
         }
         int palette = ma.palette;
         setCubeSpriteColor(palette);
@@ -118,7 +125,7 @@ public class CustomView extends View {
                     aux = aux * 2;
             }
         }
-        return (lineScore * aux);
+        return (30 * aux);
     }
 
     public void updateScore(int lines) {
@@ -236,7 +243,7 @@ public class CustomView extends View {
                 activePowerUp = new slowPowerUp(powerBmp2, this, cubelength * 2, top - cubelength);
                 break;
             case 2:
-                activePowerUp = new tNTPowerUp(powerBmp3, this, cubelength * 2, top - cubelength);
+                activePowerUp = new tntPowerUp(powerBmp3, this, cubelength * 2, top - cubelength);
                 break;
             default:
                 activePowerUp = null;
@@ -313,8 +320,21 @@ public class CustomView extends View {
     }
 
 
-    public void moverDerechaActiva(TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyRight(bmp, this);
+    public void moverIzqDerGirar(TetrixPiece pieza, int coor){
+        TetrixPiece nueva;
+        switch (coor){
+            case 1:
+                nueva = pieza.copyLeft(bmp, this);
+                break;
+            case 2:
+                nueva = pieza.copyRight(bmp, this);
+                break;
+            case 3:
+                nueva = pieza.copyRotate(bmp, this);
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + coor);
+        }
         boolean nochocan = true;
         for (TetrixPiece ptablero : piezas) {
             if (ptablero != pieza)
@@ -327,46 +347,20 @@ public class CustomView extends View {
         for (CubeSprite c : nueva.getSprites()) {
             nofuera = nofuera && ((c.getX() >= 0) && (c.getX() <= cwidth - cube[0].getLength()));
         }
-        if (nochocan && nofuera) {
-            activePiece.moveRight();
-        }
-    }
-
-    public void moverIzquierdaActiva(TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyLeft(bmp, this);
-        boolean nochocan = true;
-        for (TetrixPiece ptablero : piezas) {
-            if (ptablero != pieza)
-                nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
-        }
-        if (secondPiece != null)
-            nochocan = nochocan && (!isCollisionPiece(nueva, secondPiece));
-        boolean nofuera = true;
-        CubeSprite[] cube = activePiece.getSprites();
-        for (CubeSprite c : nueva.getSprites()) {
-            nofuera = nofuera && ((c.getX() >= 0) && (c.getX() <= cwidth - cube[0].getLength()));
-        }
-        if (nochocan && nofuera) {
-            activePiece.moveLeft();
-        }
-    }
-
-    public void girar(TetrixPiece pieza) {
-        TetrixPiece nueva = pieza.copyRotate(bmp, this);
-        boolean nochocan = true;
-        for (TetrixPiece ptablero : piezas) {
-            if (ptablero != pieza)
-                nochocan = nochocan && (!isCollisionPiece(nueva, ptablero));
-        }
-        if (secondPiece != null)
-            nochocan = nochocan && (!isCollisionPiece(nueva, secondPiece));
-        boolean nofuera = true;
-        CubeSprite[] cube = activePiece.getSprites();
-        for (CubeSprite c : nueva.getSprites()) {
-            nofuera = nofuera && ((c.getX() >= 0) && (c.getX() <= cwidth - cube[0].getLength()));
-        }
-        if (nochocan && nofuera) {
-            activePiece.rotate90Right();
+        if(nochocan && nofuera){
+            switch (coor){
+                case 1:
+                    activePiece.moveLeft();
+                    break;
+                case 2:
+                    activePiece.moveRight();
+                    break;
+                case 3:
+                    activePiece.rotate90Right();
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + coor);
+            }
         }
     }
 
@@ -418,7 +412,7 @@ public class CustomView extends View {
 
     public void switchPiece() {
         if (secondPiece != null) {
-            st.secondBool = !st.secondBool;
+            getSt().secondBool = !getSt().secondBool;
             TetrixPiece aux = activePiece;
             activePiece = secondPiece;
             secondPiece = aux;
@@ -431,9 +425,9 @@ public class CustomView extends View {
     }
 
     public void switchSpeed() {
-        int aux2 = st.getGameSpeed();
-        st.setGameSpeed(st.getSecondPieceSpeed());
-        st.setSecondPieceSpeed(aux2);
+        int aux2 = getSt().getGameSpeed();
+        getSt().setGameSpeed(getSt().getSecondPieceSpeed());
+        getSt().setSecondPieceSpeed(aux2);
     }
 
     public void updateSprite(CubeSprite[] cubos, int i) {
@@ -523,7 +517,7 @@ public class CustomView extends View {
                     x2PowerUp paux = (x2PowerUp) p;
                     paux.start();
                 } else if (p.isPowerUp() == 2) {
-                    tNTPowerUp paux = (tNTPowerUp) p;
+                    tntPowerUp paux = (tntPowerUp) p;
                     if (!paux.isUsed()) {
                         paux.setUsed();
                         deleteLine(linea - 1, spriteLength, interSpace);
@@ -561,9 +555,9 @@ public class CustomView extends View {
         for (int i = 0; i < 4; i++) {
             if (cubes[i] != null && cubes[i].getY() <= top) {
                 if (gameMode == 0)
-                    st.running = false;
+                    getSt().running = false;
                 else
-                    sta.running = false;
+                    getSta().running = false;
                 this.invalidate();
                 sleep(1000);
                 ma.changeGameOver();
@@ -582,16 +576,16 @@ public class CustomView extends View {
 
     public void fastFall() {
         if (gameMode == 0)
-            st.setGameSpeed(1);
+            getSt().setGameSpeed(1);
         else
-            sta.setGameSpeed(1);
+            getSta().setGameSpeed(1);
     }
 
     public void resetFall() {
         if (gameMode == 0)
-            st.setGameSpeed(7);
+            getSt().setGameSpeed(7);
         else
-            sta.setGameSpeed(7);
+            getSta().setGameSpeed(7);
     }
 
     private void setCubeSpriteColor(int palette) {
@@ -628,8 +622,8 @@ public class CustomView extends View {
 
     public boolean isSecondThreadRunnig() {
         if (gameMode == 0)
-            return st.running;
+            return getSt().running;
         else
-            return sta.running;
+            return getSta().running;
     }
 }
