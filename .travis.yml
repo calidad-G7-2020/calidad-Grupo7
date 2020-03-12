@@ -15,7 +15,7 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: calidad-g7-2020
+    organization: "calidad-g7-2020"
     token:
       secure: "bHFXyW6fu+UgmpB21zyTv/JOjKJ77BScQq9FN3xweqo1+zUxZVA1zhNiQC7fo0leSN2pursXYjVrX6AmPW79v2+FLVkNP/CT660sgj6vBs2MDgAFwiZPyXcEK2GsbtaJGIskzahEABjBMm8L207lVQfaa2j2PiBnqTZ0fTmgH3lVjwil8l3F9UBDjlKlMo/hm6vetDmpmNg9PHnjYq/H7JLcgS6dlSEy+pHqmWIrRfls6kCy4J38NVvOyHwL3Z
       v2k6FUWdi2Ta4ZGe52N/vQiDgH06f7LZ78021RaBV/BdDx24EIzqgpWM/GXw1tTXCOEialWHTguigd8nVN+9c9HXUxV7twNHHttpFYI3g+cGkMwgHapxWFdeirMCPdX2Gbf/6EsLc3bglenQ4exZUlmeGQzBzZRt9pBaxQ9+tSYHl+9nxK1ejF+PJ38SR99m6sJhaxdajdGjXpPmP1pqXX3VJNZt3P0sKoEkf58ERTSMlpwocoODXOYOjxdZOdPEmrSHwkhLE
@@ -26,3 +26,9 @@ script:
   - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
   - ./gradlew build
   - ./gradlew sonarqube
+
+branches:
+  only:
+    - feature/travis2
+    - master
+    - /.*/
