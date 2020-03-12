@@ -13,8 +13,16 @@ android:
 before_install:
   - chmod +x ./gradlew
 
+addons:
+  sonarcloud:
+    organization: calidad-g7-2020
+    token:
+      secure: "bHFXyW6fu+UgmpB21zyTv/JOjKJ77BScQq9FN3xweqo1+zUxZVA1zhNiQC7fo0leSN2pursXYjVrX6AmPW79v2+FLVkNP/CT660sgj6vBs2MDgAFwiZPyXcEK2GsbtaJGIskzahEABjBMm8L207lVQfaa2j2PiBnqTZ0fTmgH3lVjwil8l3F9UBDjlKlMo/hm6vetDmpmNg9PHnjYq/H7JLcgS6dlSEy+pHqmWIrRfls6kCy4J38NVvOyHwL3Z
+      v2k6FUWdi2Ta4ZGe52N/vQiDgH06f7LZ78021RaBV/BdDx24EIzqgpWM/GXw1tTXCOEialWHTguigd8nVN+9c9HXUxV7twNHHttpFYI3g+cGkMwgHapxWFdeirMCPdX2Gbf/6EsLc3bglenQ4exZUlmeGQzBzZRt9pBaxQ9+tSYHl+9nxK1ejF+PJ38SR99m6sJhaxdajdGjXpPmP1pqXX3VJNZt3P0sKoEkf58ERTSMlpwocoODXOYOjxdZOdPEmrSHwkhLE
+      yr6C3uD2dfr+Fte0f+1EQusGEX0CEwkjulE/FGNBLyjxyzRemOTy3z1NLsdXAfy8FIV+gl6cA77qb7dn1kbBI3TjRc4Vg79dRgU9i/YLU0ewDCuJ7HwWAIgJBb4PMR+G4zhyTBd/IC2D4wd/tN6j59u4yaKajBoo7Hno="
 
 script:
   - echo "Travis branch is $TRAVIS_BRANCH"
   - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
   - ./gradlew build
+  - ./gradlew sonarqube

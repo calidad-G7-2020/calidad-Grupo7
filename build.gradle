@@ -22,7 +22,7 @@ sonarqube {
         property "sonar.projectKey", "calidad-G7-2020_calidad-Grupo7"
         property "sonar.organization", "calidad-g7-2020"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.login", "c2459fade7b8ade221abdcfcbead4e049007844d"
+        property "sonar.login", "218e9d7ee5a9d6e795de5920e28a59f88fcda7fe"
     }
 }
 allprojects {
