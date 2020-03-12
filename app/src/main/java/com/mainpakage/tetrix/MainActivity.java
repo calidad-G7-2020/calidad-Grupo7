@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     int thm;
     int palette;
     int gameMode;
-    Random randNum;
+    Random randNum  = new Random();
     static final String THEME ="theme";
 
     @Override
