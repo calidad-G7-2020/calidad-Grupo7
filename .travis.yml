@@ -17,7 +17,7 @@ addons:
   sonarcloud:
     organization: "calidad-g7-2020"
     token:
-      secure: "tFSFfFxW/F8TOk/iushlRhp//Mi2vrOItZOp5NsF1yGYasnP+/cfaho1iZNMYFIN2LtpxkZPon9TsdJqLUHRX7OOLHJUWzr/AcEjXKWuvT2trLVy4Hn5h4LDiXDLadOv/HWM44uh9JhmxZH3/gRxDJ0rirdJ2OeTkajmDNaBCU3ASaKYg84DSsToZ5zqmfU9aKEbsdDacAiku6GnwbUxFaP3MFxancPED23+otbbFOgh+YyFSt9Mf6D1ItUuBlHJgonKjG8+44nv/BaAgraPlD2hKaAqaOuWW9ea0+g/7/4v0WDVk5nvJtg4V/4GoGPkEWq4P8E8pzm3ire8vxXrELw23/Knq9ALeXqm3ItIlrvXFWpQFOYzVcPDtLytcBj2s/yu34RxXN/QJoX+mA0n9Hche1Yrr+/reaq8BDSLxG044bnqEtutTPHN2eF1AfJTUNPkaen6CZ1BFpAIX3fIRt0GbS41xxUS82igC1CRWapedO7XOPjcmH7eJrS1Hgd74Y9IH0OLMmvvjaHQlNUW2wtgLn+U3UGITD3b057CMHI7hJ/zEgT/+KBx3cZbAoR9KE5E3njJHxcUMxqd/wK9Stk8/SmBzgnnPL+ArrjNzL3JY7yjJ53qrXcbPaz2gktUowMFLiPd5UteSOyTSkiOHgi3mgD2Cwdeh5HhP9ZGF/A="
+      secure: "c2459fade7b8ade221abdcfcbead4e049007844d"
 
 script:
   - echo "Travis branch is $TRAVIS_BRANCH"

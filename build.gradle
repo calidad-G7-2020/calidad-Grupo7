@@ -20,9 +20,9 @@ plugins {
 sonarqube {
     properties {
         property "sonar.projectKey", "calidad-G7-2020_calidad-Grupo7"
-//        property "sonar.organization", "calidad-g7-2020"
-//        property "sonar.host.url", "https://sonarcloud.io"
-//        property "sonar.login", "c2459fade7b8ade221abdcfcbead4e049007844d"
+        property "sonar.organization", "calidad-g7-2020"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", "c2459fade7b8ade221abdcfcbead4e049007844d"
     }
 }
 allprojects {
