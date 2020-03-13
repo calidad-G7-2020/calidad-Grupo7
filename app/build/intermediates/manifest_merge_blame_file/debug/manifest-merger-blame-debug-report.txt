@@ -39,50 +39,49 @@
 24-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:17:9-54
 25        android:supportsRtl="true"
 25-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:18:9-35
-26        android:testOnly="true"
-27        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-27-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:19:9-65
-28        <activity
-28-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:20:9-113
-29            android:name="com.mainpakage.tetrix.Tutorial"
-29-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:20:19-64
-30            android:screenOrientation="portrait" />
-30-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:20:65-101
-31        <activity
-31-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:21:9-107
-32            android:name="com.mainpakage.tetrix.QuickReboot"
-32-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:21:19-67
-33            android:screenOrientation="portrait" />
-33-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:21:68-104
-34        <activity
-34-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:22:9-28:20
-35            android:name="com.mainpakage.tetrix.StartMenu"
-35-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:22:19-65
-36            android:screenOrientation="portrait" >
-36-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:22:66-102
-37            <intent-filter>
-37-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:23:13-27:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:24:17-69
-38-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:24:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:26:17-77
-40-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:26:27-74
-41            </intent-filter>
-42        </activity>
-43        <activity
-43-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:29:9-108
-44            android:name="com.mainpakage.tetrix.MainActivity"
-44-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:29:19-68
-45            android:screenOrientation="portrait" />
-45-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:29:69-105
-46        <activity
-46-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:30:9-104
-47            android:name="com.mainpakage.tetrix.GameOver"
-47-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:30:19-64
-48            android:screenOrientation="portrait" />
-48-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:30:65-101
-49    </application>
-50
-51</manifest>
+26        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+26-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:19:9-65
+27        <activity
+27-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:20:9-113
+28            android:name="com.mainpakage.tetrix.Tutorial"
+28-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:20:19-64
+29            android:screenOrientation="portrait" />
+29-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:20:65-101
+30        <activity
+30-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:21:9-107
+31            android:name="com.mainpakage.tetrix.QuickReboot"
+31-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:21:19-67
+32            android:screenOrientation="portrait" />
+32-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:21:68-104
+33        <activity
+33-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:22:9-28:20
+34            android:name="com.mainpakage.tetrix.StartMenu"
+34-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:22:19-65
+35            android:screenOrientation="portrait" >
+35-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:22:66-102
+36            <intent-filter>
+36-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:23:13-27:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:24:17-69
+37-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:24:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:26:17-77
+39-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:26:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:29:9-108
+43            android:name="com.mainpakage.tetrix.MainActivity"
+43-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:29:19-68
+44            android:screenOrientation="portrait" />
+44-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:29:69-105
+45        <activity
+45-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:30:9-104
+46            android:name="com.mainpakage.tetrix.GameOver"
+46-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:30:19-64
+47            android:screenOrientation="portrait" />
+47-->C:\Users\Diego\Documents\GitHub\calidad-Grupo7\app\src\main\AndroidManifest.xml:30:65-101
+48    </application>
+49
+50</manifest>

@@ -10,9 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b84698-5468-4f3d-80e3-9072c7a27ca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26b0b666e1fbb5b924e18d67facd810720b98181" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26b0b666e1fbb5b924e18d67facd810720b98181" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80eb67d58bc2aa4c3c29c75eebff943252744db3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80eb67d58bc2aa4c3c29c75eebff943252744db3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/9586a100dd910904c25578cf0dcacd899bd47b98" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/9586a100dd910904c25578cf0dcacd899bd47b98" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a53c76309427958a19e92b7ec528b49e0b453f76" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a53c76309427958a19e92b7ec528b49e0b453f76" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c6ea9a206c96cb99e34c44c67113c580dd28d036" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c6ea9a206c96cb99e34c44c67113c580dd28d036" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce70618f74fe0a14ecf15b4e65df94ae791f2212" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce70618f74fe0a14ecf15b4e65df94ae791f2212" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db995fc704e844d4edb3994cd534643de8d8e0a7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db995fc704e844d4edb3994cd534643de8d8e0a7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f95893e2d2095f55f94fad30444688c34ea3f914" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f95893e2d2095f55f94fad30444688c34ea3f914" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mainpakage/tetrix/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mainpakage/tetrix/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/QZliAzHR+fYaNE8092+JlnovPHg=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/QZliAzHR+fYaNE8092+JlnovPHg=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +58,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -67,24 +88,23 @@
     <property name="ExportApk.SignV2" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/mainpakage/tetrix" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../CalidadRefactor/calidad-Grupo7" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alvar\Desktop\hope\Tetris\app\src\main\assets" />
-      <recent name="C:\Users\alvar\Desktop\hope\Tetris\app\src\main\res\font" />
-      <recent name="C:\Users\diego\AndroidStudioProjects\Tetris\app\src\main\java\com\mainpakage\Tetrix\TetrixPieces" />
-      <recent name="C:\Users\diego\AndroidStudioProjects\Tetris\app\src\main\res\layout" />
-      <recent name="C:\Users\diego\AndroidStudioProjects\Tetris\app\src\main\java\com\mainpakage\Tetrix" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.mainpakage.Tetrix" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mainpakage.tetrix" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.mainpakage.sprites" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mainpakage.Tetrix" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -93,6 +113,16 @@
       <recent name="C:\Users\NOELIA\Desktop\Tetrix\Tetris-master\app\src\main\res\drawable" />
       <recent name="C:\Users\NOELIA\Desktop\Tetrix\Tetris-master\app\src\main\res\drawable-hdpi" />
       <recent name="C:\Users\NOELIA\Desktop\Tetrix\Tetris-master\app\src\main\res\drawable-v24" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mainpakage.Tetrix" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alvar\Desktop\hope\Tetris\app\src\main\assets" />
+      <recent name="C:\Users\alvar\Desktop\hope\Tetris\app\src\main\res\font" />
+      <recent name="C:\Users\diego\AndroidStudioProjects\Tetris\app\src\main\java\com\mainpakage\Tetrix\TetrixPieces" />
+      <recent name="C:\Users\diego\AndroidStudioProjects\Tetris\app\src\main\res\layout" />
+      <recent name="C:\Users\diego\AndroidStudioProjects\Tetris\app\src\main\java\com\mainpakage\Tetrix" />
     </key>
   </component>
   <component name="RunDashboard">

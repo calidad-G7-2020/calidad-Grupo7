@@ -102,3 +102,5 @@ K
 build/sonar/report-task.txt,a\1\a10cf52f1d3bcb73e14f9e4971ea9918c7b0e4e3
 s
 Capp/src/main/java/com/mainpakage/tetrix/tetrixpieces/x2PowerUp.java,2\6\26b0b666e1fbb5b924e18d67facd810720b98181
+s
+Capp/src/test/java/com/mainpakage/tetrix/CustomViewMovementTest.java,0\5\052817f431a3128fc78f0ea117f321ca5585e9c9

@@ -1,23 +1,18 @@
 
-I
-java:S1199¢"-Extract this nested code block into a method.(©î¯âúÿÿÿÿ
-D
-java:S1199™"-Extract this nested code block into a method.(ş…¿´
-I
-java:S1199´"-Extract this nested code block into a method.(óÄåÕúÿÿÿÿ
-D
-java:S1199«"-Extract this nested code block into a method.(ï€«
-R
-java:S1117q"5Rename "r" which hides the field declared at line 40.(Ñèç8É¬ÄÓŒ.
-V	java:S125?"<This block of commented-out lines of code should be removed.(±‚‹ºûÿÿÿÿ
-m
-java:S3776+"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(¨Œşÿÿÿÿ
-C
-java:S1481="-Remove this unused "numScore" local variable.(èŞÔè
-\
-java:S11922"FDefine a constant instead of duplicating this literal "theme" 3 times.(€ÛÎú
 
-java:S1186Ò"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œƒƒ©ùÿÿÿÿ
+java:S1186Ö"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œƒƒ©ùÿÿÿÿ
 D
-java:S1199½"-Extract this nested code block into a method.(¢¦íç
-=	java:S131˜""Add a default case to this switch.(¤ğÂşÿÿÿÿ
+java:S1199¬"-Extract this nested code block into a method.(ï€«
+D
+java:S1199š"-Extract this nested code block into a method.(ş…¿´
+V	java:S125@"<This block of commented-out lines of code should be removed.(±‚‹ºûÿÿÿÿ
+I
+java:S1199µ"-Extract this nested code block into a method.(óÄåÕúÿÿÿÿ
+I
+java:S1199£"-Extract this nested code block into a method.(©î¯âúÿÿÿÿ
+m
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(¨Œşÿÿÿÿ
+C
+java:S1481>"-Remove this unused "numScore" local variable.(èŞÔè
+D
+java:S1199¾"-Extract this nested code block into a method.(¢¦íç
