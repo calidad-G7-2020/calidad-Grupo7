@@ -566,9 +566,9 @@ public class CustomView extends View {
         }
     }
     public void gameOver() throws InterruptedException {
-        for (TetrixPiece p : piezas) {
-            CubeSprite[] cubos = p.getSprites();
-            if ((p != activePiece) && (p != secondPiece) && (p != activePowerUp)) {
+        for (TetrixPiece pieza : piezas) {
+            CubeSprite[] cubos = pieza.getSprites();
+            if ((pieza != activePiece) && (pieza != secondPiece) && (pieza != activePowerUp)) {
                 gameModeRefactor(cubos);
             }
         }
