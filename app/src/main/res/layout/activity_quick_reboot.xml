@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundranking"
+    tools:context=".QuickReboot">
+
+    <ImageView
+        android:id="@+id/bloqueTXT"
+        android:layout_width="364dp"
+        android:layout_height="123dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat="@drawable/bloquetutorialacht" />
+
+    <TextView
+        android:id="@+id/scndatttxt"
+        android:layout_width="294dp"
+        android:layout_height="169dp"
+        android:gravity="center"
+        android:lineSpacingExtra="18sp"
+        android:text="DO YOU WANT ANOTHER TRY?"
+        android:textColor="#474242"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:fontFamily="@font/gumbo"
+        app:layout_constraintBottom_toBottomOf="@+id/bloqueTXT"
+        app:layout_constraintEnd_toEndOf="@+id/bloqueTXT"
+        app:layout_constraintStart_toStartOf="@+id/bloqueTXT"
+        app:layout_constraintTop_toTopOf="@+id/bloqueTXT"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <Button
+        android:id="@+id/yesBut"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:background="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/noBut"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scndatttxt"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <ImageButton
+        android:id="@+id/noBut"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/nobutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scndatttxt"
+        app:layout_constraintVertical_bias="0.313" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
