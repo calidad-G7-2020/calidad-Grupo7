@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         ConstraintLayout back=(ConstraintLayout)findViewById(R.id.layout);      //set background
         ImageView scoreBack=(ImageView)findViewById(R.id.scorebackground);
         ImageView nP=(ImageView)findViewById(R.id.npbackground);
-        TextView numScore=(TextView)findViewById(R.id.valorPuntuacion);
 
         /*Typeface golden=Typeface.createFromAsset(getAssets(), "goldenhills.ttf");
         numScore.setTypeface(golden);*/
