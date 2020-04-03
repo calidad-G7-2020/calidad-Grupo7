@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\drawable\\bgcl8.png"
     },
     {
-        "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\font_original_quality.otf.flat",
-        "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\font\\original_quality.otf"
-    },
-    {
         "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_death.png.flat",
         "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\drawable\\death.png"
+    },
+    {
+        "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\font_original_quality.otf.flat",
+        "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\font\\original_quality.otf"
     },
     {
         "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cubespriteb.png.flat",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\drawable\\bgcl11.png"
     },
     {
-        "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_choosespooky.png.flat",
-        "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\drawable\\choosespooky.png"
-    },
-    {
         "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_switchpressedclassic.png.flat",
         "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\drawable\\switchpressedclassic.png"
+    },
+    {
+        "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_choosespooky.png.flat",
+        "source": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\src\\main\\res\\drawable\\choosespooky.png"
     },
     {
         "merged": "C:\\Users\\Diego\\Documents\\GitHub\\calidad-Grupo7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
