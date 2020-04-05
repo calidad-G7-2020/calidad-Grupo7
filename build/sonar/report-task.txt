@@ -1,8 +1,0 @@
-organization=calidad-g7-2020
-projectKey=calidad-G7-2020_calidad-Grupo7
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.5447
-branch=develop
-dashboardUrl=https://sonarcloud.io/dashboard?id=calidad-G7-2020_calidad-Grupo7&branch=develop&resolved=false
-ceTaskId=AXCqhq_zd7ORLiD7LHqT
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXCqhq_zd7ORLiD7LHqT
