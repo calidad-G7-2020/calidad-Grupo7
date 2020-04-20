@@ -19,7 +19,7 @@ public class TetrisMusicActivitySteps {
         throw new PendingException();
     }
 
-    @Then("^I am be pretty happy$")
+    @Then("^I am pretty happy$")
     public void i_am_be_pretty_happy() throws Throwable {
         throw new PendingException();
     }

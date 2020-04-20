@@ -7,4 +7,4 @@ Feature: Original music track of the Tetris game
   Scenario: Original tetris music in the game
     Given I´m in the main menu
     When I press the classic music button
-    Then I am be pretty happy
+    Then I am pretty happy
