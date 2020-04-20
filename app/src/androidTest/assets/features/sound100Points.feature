@@ -5,6 +5,6 @@ Feature:Sounds each 100 points
 
   @sound100Points-feature
   Scenario: Simple sound each 100 points
-    Given I don´t be alert each 100 points
+    Given I am in the middle of a game and I want to be alert each 100 points
     When application notifies me
     Then I am motivated

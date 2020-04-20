@@ -8,7 +8,7 @@ import cucumber.api.java.en.Then;
 //@RunWith(Cucumber.class)
 public class Sound100PointsActivitySteps {
 
-    @Given("^I don´t be alert each 100 points$")
+    @Given("^I am in the middle of a game and I want to be alert each 100 points$")
     public void i_dont_be_alert_each_100_points() throws Throwable {
         throw new PendingException();
     }
