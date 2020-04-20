@@ -8,8 +8,8 @@ import cucumber.api.java.en.When;
 //@RunWith(Cucumber.class)
 public class RankingActivitySteps {
 
-    @Given("^I´m in the main menu$")
-    public void im_in_the_main_menu() throws Throwable {
+    @Given("^I´m in the main menu of game$")
+    public void im_in_the_main_menu_of_game() throws Throwable {
         throw new PendingException();
     }
 
