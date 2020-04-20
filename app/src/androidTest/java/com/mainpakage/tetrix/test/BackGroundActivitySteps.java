@@ -1,13 +1,9 @@
 package com.mainpakage.tetrix.test;
 
-
-
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-
 
 //@RunWith(Cucumber.class)
 public class BackGroundActivitySteps {
