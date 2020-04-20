@@ -1,7 +1,6 @@
 Feature: Original music track of the Tetris game
   As a classic tetris user
   I want to hear original tetris music while i am playing
-  And I´m in the main menu
   Because I want to remember my youth
 
   @tetrisMusic-feature
