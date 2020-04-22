@@ -1,117 +1,0 @@
-
-\com.mainpakage.Tetrix.MainActivity$4#onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Za
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¦ ¦(""paramAnnotations*Í
-2a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java­ ­(Î
-Ë
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java­ ­(&
-%9 com.mainpakage.Tetrix.CustomView"__id*8*6&
-$com.mainpakage.Tetrix.MainActivity$4"
-
-customViewÙÖ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java­ ­(*
-%10void"-com.mainpakage.Tetrix.CustomView#resetFall()V*(
-&
-%9 com.mainpakage.Tetrix.CustomView2resetFall()ÊÇ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java® ®(1
-%11void"+android.view.View#setBackgroundResource(I)V*
-""*
-""2setBackgroundResource(I)"k
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¯ ¯( 
-""*»
-3a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬ ¬(ÊÇ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬ ¬(*	
-%7int"%android.view.MotionEvent#getAction()I*#
-!
-eventandroid.view.MotionEvent2getAction()~
-|
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¬. ¬(C	
-%8int"__id*
-""*
-2
-1*É
-4a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨ ¨(Î
-Ë
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨ ¨(&
-%4 com.mainpakage.Tetrix.CustomView"__id*8*6&
-$com.mainpakage.Tetrix.MainActivity$4"
-
-customViewÖÓ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¨ ¨()
-
-%5void",com.mainpakage.Tetrix.CustomView#fastFall()V*(
-&
-%4 com.mainpakage.Tetrix.CustomView2
-fastFall()ÉÆ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java© ©(5
-
-%6void"+android.view.View#setBackgroundResource(I)V*
-""*
-""2setBackgroundResource(I)"k
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.javaª ª( 
-""*»
-5a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§ §(ÊÇ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§ §(%	
-%0int"%android.view.MotionEvent#getAction()I*#
-!
-eventandroid.view.MotionEvent2getAction()~
-|
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java§) §(@	
-%1int"__id*
-""*
-3
-4*˜
-paramAnnotationsa
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¦" ¦(=ª
-§
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥ ¥(
-%2"
-__annotate*
-java.lang.Override*
-
-vandroid.view.View”
-‘
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¦( ¦()
-vandroid.view.View"__annotation*
-
-%2µ
-²
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¥ ¥(
-%3"
-__annotate*
-java.lang.Override*#
-!
-eventandroid.view.MotionEventŸ
-œ
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java¦7 ¦(<!
-eventandroid.view.MotionEvent"__annotation*
-
-%3*
-5*Ó
-1a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java± ±("k
-a
-UD:/GitKraken/calidad-Grupo7/app/src/main/java/com/mainpakage/Tetrix/MainActivity.java± ±(
-"":
-vandroid.view.View:!
-eventandroid.view.MotionEventB(&
-$com.mainpakage.Tetrix.MainActivity$4
