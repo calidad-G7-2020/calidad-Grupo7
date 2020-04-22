@@ -64,6 +64,7 @@
         android:layout_marginRight="161dp"
         android:background="@drawable/ok"
         android:onClick="onClickOk"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

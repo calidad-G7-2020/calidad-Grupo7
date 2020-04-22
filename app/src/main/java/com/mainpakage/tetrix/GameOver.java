@@ -50,26 +50,34 @@ public class GameOver extends AppCompatActivity {
         listRanking = (ListView) findViewById(R.id.listRanking);
         gameOverText = (TextView) findViewById(R.id.gameOver);
         rankingText = (TextView) findViewById(R.id.rankingText);
-        dispatchTakePictureIntent();
 
-        pn = (EditText) findViewById(R.id.playerName);
-        int gameMode = bAux.getInt("GameMode");
-        if(gameMode==0)
-            preferences = getSharedPreferences("RankingDefinitive", Context.MODE_PRIVATE);
-        else
-            preferences = getSharedPreferences("RankingPowerDefinitive", Context.MODE_PRIVATE);
-        editor = preferences.edit();
-        Set<String> scores = preferences.getStringSet("Scores", null);
         ranking = new ArrayList<>();
-        if(scores==null){
-            scores = new HashSet<>();
-        }
-        if(!scores.isEmpty()){
-            for(String s:scores){
-                String[] aux = s.split("/");
-                PlayerData pd = new PlayerData(aux[0],Integer.parseInt(aux[1]));
-                ranking.add(pd);
+        int gameMode = bAux.getInt("GameMode");
+        System.out.println(gameMode);
+        if(gameMode != -1) {
+            dispatchTakePictureIntent();
+
+            pn = (EditText) findViewById(R.id.playerName);
+
+            if (gameMode == 0)
+                preferences = getSharedPreferences("RankingDefinitive", Context.MODE_PRIVATE);
+            else
+                preferences = getSharedPreferences("RankingPowerDefinitive", Context.MODE_PRIVATE);
+            editor = preferences.edit();
+            Set<String> scores = preferences.getStringSet("Scores", null);
+
+            if (scores == null) {
+                scores = new HashSet<>();
             }
+            if (!scores.isEmpty()) {
+                for (String s : scores) {
+                    String[] aux = s.split("/");
+                    PlayerData pd = new PlayerData(aux[0], Integer.parseInt(aux[1]));
+                    ranking.add(pd);
+                }
+            }
+        }else{
+            viewRanking();
         }
     }
 
@@ -131,6 +139,35 @@ public class GameOver extends AppCompatActivity {
             ImageView picCam=(ImageView)findViewById(R.id.picCam);
             picCam.setImageBitmap(imageBitmap);
         }
+    }
+
+    private void viewRanking(){
+
+        final Button butCl = (Button) findViewById(R.id.setName);
+        butCl.setVisibility(View.GONE);
+        gameOverText.setVisibility(View.GONE);
+        playerName.setVisibility(View.GONE);
+        picCam.setVisibility(View.GONE);
+        scoreText.setVisibility(View.GONE);
+        rankingText.setVisibility(View.GONE);
+        listRanking.setVisibility(View.VISIBLE);
+
+        Collections.sort(ranking);
+        Set<String> scores = new HashSet<>();
+        for (PlayerData p : ranking) {
+            scores.add(p.toString());
+        }
+        //editor.putStringSet("Scores", scores);
+        //editor.commit();
+        //adaptedArray.clear();
+        for (int r = 0; (r < ranking.size()) && (r < 10); r++)
+            adaptedArray.add(ranking.get(r).toFormatString());
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, adaptedArray);
+        listRanking.setAdapter(arrayAdapter);
+
+
+
     }
 
 }
