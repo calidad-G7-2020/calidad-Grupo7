@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class StartMenu extends AppCompatActivity {
     int thm;
     int gameMode;
+        // gameMode=1 classic mode
+        // gameMode=0 spooky mode
     boolean themeSelected;
 
     protected void onCreate(Bundle savedInstanceState) {

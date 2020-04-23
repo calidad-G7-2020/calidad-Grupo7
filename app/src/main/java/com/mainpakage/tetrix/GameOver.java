@@ -26,7 +26,7 @@ import java.util.List;
 
 public class GameOver extends AppCompatActivity {
     private EditText pn;
-    private Button ok;
+    private Button ok,butCl, restablecer;
     private List<PlayerData> ranking;
     private TextView playerName, gameOverText, rankingText,scoreText;
     private ListView listRanking;
@@ -36,6 +36,8 @@ public class GameOver extends AppCompatActivity {
     private SharedPreferences.Editor editor;
     private List<String> adaptedArray;
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    private int gameMode;
+    private Set<String> scores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,37 +46,28 @@ public class GameOver extends AppCompatActivity {
         bAux = getIntent().getExtras();
         adaptedArray = new ArrayList<>();
         scoreText = (TextView) findViewById(R.id.Score);
-        scoreText.setText("Score: "+ bAux.getString("Score"));
+        scoreText.setText("Score: " + bAux.getString("Score"));
         playerName = (TextView) findViewById(R.id.playerName);
         picCam = (ImageView) findViewById(R.id.picCam);
         listRanking = (ListView) findViewById(R.id.listRanking);
         gameOverText = (TextView) findViewById(R.id.gameOver);
         rankingText = (TextView) findViewById(R.id.rankingText);
+        butCl = (Button) findViewById(R.id.setName);
+        restablecer = (Button) findViewById(R.id.butRestablecer);
 
-        int gameMode = bAux.getInt("GameMode");
+        gameMode = bAux.getInt("GameMode");
         if (gameMode == 0)
             preferences = getSharedPreferences("RankingDefinitive", Context.MODE_PRIVATE);
         else
             preferences = getSharedPreferences("RankingPowerDefinitive", Context.MODE_PRIVATE);
-        Set<String> scores = preferences.getStringSet("Scores", null);
-        editor = preferences.edit();
-        ranking = new ArrayList<>();
-        if (scores == null) {
-            scores = new HashSet<>();
-        }
-        if (!scores.isEmpty()) {
-            for (String s : scores) {
-                String[] aux = s.split("/");
-                PlayerData pd = new PlayerData(aux[0], Integer.parseInt(aux[1]));
-                ranking.add(pd);
-            }
-        }
 
-        if(gameMode != -1) {
+        updateRanking();
+
+        if (gameMode != -1) {
             dispatchTakePictureIntent();
             pn = (EditText) findViewById(R.id.playerName);
         }else{
-            viewRanking(scores);
+            viewRanking();
         }
     }
 
@@ -108,6 +101,7 @@ public class GameOver extends AppCompatActivity {
             scoreText.setVisibility(View.INVISIBLE);
             rankingText.setVisibility(View.VISIBLE);
             listRanking.setVisibility(View.VISIBLE);
+            restablecer.setVisibility(View.VISIBLE);
         }
     }
 
@@ -139,9 +133,8 @@ public class GameOver extends AppCompatActivity {
         }
     }
 
-    private void viewRanking(Set<String> scores){
+    private void viewRanking(){
 
-        final Button butCl = (Button) findViewById(R.id.setName);
         butCl.setVisibility(View.GONE);
         gameOverText.setVisibility(View.GONE);
         playerName.setVisibility(View.GONE);
@@ -149,6 +142,7 @@ public class GameOver extends AppCompatActivity {
         scoreText.setVisibility(View.GONE);
         rankingText.setVisibility(View.VISIBLE);
         listRanking.setVisibility(View.VISIBLE);
+        restablecer.setVisibility(View.VISIBLE);
 
         Collections.sort(ranking);
 
@@ -164,6 +158,31 @@ public class GameOver extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, adaptedArray);
         listRanking.setAdapter(arrayAdapter);
 
+    }
+
+    private void updateRanking(){
+        scores = preferences.getStringSet("Scores", null);
+        editor = preferences.edit();
+
+        ranking = new ArrayList<>();
+        if (scores == null) {
+            scores = new HashSet<>();
+        }
+        if (!scores.isEmpty()) {
+            for (String s : scores) {
+                String[] aux = s.split("/");
+                PlayerData pd = new PlayerData(aux[0], Integer.parseInt(aux[1]));
+                ranking.add(pd);
+            }
+        }
+    }
+
+    public void vaciarRanking(View v){
+
+        this.editor.clear();
+        this.editor.apply();
+        updateRanking();
+        viewRanking();
     }
 
 }
