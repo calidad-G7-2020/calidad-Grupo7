@@ -26,7 +26,7 @@ import java.util.List;
 
 public class GameOver extends AppCompatActivity {
     private EditText pn;
-    private Button ok;
+    private Button ok,butCl, restablecer;
     private List<PlayerData> ranking;
     private TextView playerName, gameOverText, rankingText,scoreText;
     private ListView listRanking;
@@ -36,40 +36,49 @@ public class GameOver extends AppCompatActivity {
     private SharedPreferences.Editor editor;
     private List<String> adaptedArray;
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    private int gameMode;
+    private Set<String> scores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_over);
         bAux = getIntent().getExtras();
+        gameMode = bAux.getInt("GameMode");
         adaptedArray = new ArrayList<>();
+
         scoreText = (TextView) findViewById(R.id.Score);
-        scoreText.setText("Score: "+ bAux.getString("Score"));
+        scoreText.setText("Score: " + bAux.getString("Score"));
         playerName = (TextView) findViewById(R.id.playerName);
         picCam = (ImageView) findViewById(R.id.picCam);
         listRanking = (ListView) findViewById(R.id.listRanking);
         gameOverText = (TextView) findViewById(R.id.gameOver);
         rankingText = (TextView) findViewById(R.id.rankingText);
-        dispatchTakePictureIntent();
+        butCl = (Button) findViewById(R.id.setName);
+        restablecer = (Button) findViewById(R.id.butRestablecer);
 
-        pn = (EditText) findViewById(R.id.playerName);
-        int gameMode = bAux.getInt("GameMode");
-        if(gameMode==0)
-            preferences = getSharedPreferences("RankingDefinitive", Context.MODE_PRIVATE);
-        else
-            preferences = getSharedPreferences("RankingPowerDefinitive", Context.MODE_PRIVATE);
-        editor = preferences.edit();
-        Set<String> scores = preferences.getStringSet("Scores", null);
-        ranking = new ArrayList<>();
-        if(scores==null){
+        if(gameMode != -2) {
+
+            if (gameMode == 0)
+                preferences = getSharedPreferences("RankingDefinitive", Context.MODE_PRIVATE);
+            else
+                preferences = getSharedPreferences("RankingPowerDefinitive", Context.MODE_PRIVATE);
+
+            scores = preferences.getStringSet("Scores", null);
+            editor = preferences.edit();
+        }else{
+            butCl.setVisibility(View.GONE);
+            gameOverText.setVisibility(View.GONE);
             scores = new HashSet<>();
+            scores.add("NOMBRE/128");
         }
-        if(!scores.isEmpty()){
-            for(String s:scores){
-                String[] aux = s.split("/");
-                PlayerData pd = new PlayerData(aux[0],Integer.parseInt(aux[1]));
-                ranking.add(pd);
-            }
+        updateRanking();
+
+        if (gameMode > -1) {
+            dispatchTakePictureIntent();
+            pn = (EditText) findViewById(R.id.playerName);
+        }else{
+            viewRanking();
         }
     }
 
@@ -86,6 +95,7 @@ public class GameOver extends AppCompatActivity {
             for (PlayerData p : ranking) {
                 scores.add(p.toString());
             }
+
             editor.putStringSet("Scores", scores);
             editor.commit();
             adaptedArray.clear();
@@ -102,6 +112,7 @@ public class GameOver extends AppCompatActivity {
             scoreText.setVisibility(View.INVISIBLE);
             rankingText.setVisibility(View.VISIBLE);
             listRanking.setVisibility(View.VISIBLE);
+            restablecer.setVisibility(View.VISIBLE);
         }
     }
 
@@ -125,12 +136,80 @@ public class GameOver extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            ImageView picCam=(ImageView)findViewById(R.id.picCam);
+            ImageView picCam = (ImageView) findViewById(R.id.picCam);
             picCam.setImageBitmap(imageBitmap);
         }
+    }
+
+    public void viewRanking(){
+
+        if (gameMode != -2) {
+            butCl.setVisibility(View.GONE);
+            gameOverText.setVisibility(View.GONE);
+            playerName.setVisibility(View.GONE);
+            picCam.setVisibility(View.GONE);
+            scoreText.setVisibility(View.GONE);
+            rankingText.setVisibility(View.VISIBLE);
+            listRanking.setVisibility(View.VISIBLE);
+            restablecer.setVisibility(View.VISIBLE);
+        }else{
+            rankingText.setVisibility(View.VISIBLE);
+            listRanking.setVisibility(View.VISIBLE);
+            restablecer.setVisibility(View.VISIBLE);
+        }
+        Collections.sort(ranking);
+
+        for (PlayerData p : ranking) {
+            scores.add(p.toString());
+        }
+        if(gameMode != -2) {
+            editor.putStringSet("Scores", scores);
+            editor.commit();
+        }
+        adaptedArray.clear();
+        for (int r = 0; (r < ranking.size()) && (r < 10); r++)
+            adaptedArray.add(ranking.get(r).toFormatString());
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, adaptedArray);
+        listRanking.setAdapter(arrayAdapter);
+
+    }
+
+    public void updateRanking(){
+
+        ranking = new ArrayList<>();
+        if (scores == null) {
+            scores = new HashSet<>();
+        }
+        if (!scores.isEmpty()) {
+            for (String s : scores) {
+                String[] aux = s.split("/");
+                PlayerData pd = new PlayerData(aux[0], Integer.parseInt(aux[1]));
+                ranking.add(pd);
+            }
+        }
+        if ((gameMode == -2) && (scores.isEmpty())) {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Ranking vacío", Toast.LENGTH_SHORT);
+            toast1.setGravity(Gravity.CENTER,0,0);
+            toast1.show();
+        }
+    }
+
+    public void vaciarRanking(View v){
+
+        if(gameMode != -2) {
+            this.editor.clear();
+            this.editor.apply();
+            scores = new HashSet<>();
+        }else{
+            this.scores.clear();
+        }
+        updateRanking();
+        viewRanking();
     }
 
 }

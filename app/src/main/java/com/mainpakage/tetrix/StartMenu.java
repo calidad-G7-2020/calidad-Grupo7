@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +18,8 @@ import java.util.List;
 public class StartMenu extends AppCompatActivity {
     int thm;
     int gameMode;
+        // gameMode=1 classic mode
+        // gameMode=0 spooky mode
     boolean themeSelected;
 
     private List<String> backGroundList;
@@ -125,6 +130,20 @@ public class StartMenu extends AppCompatActivity {
                 return false;
             }
         });
+
+        final ImageButton butRanking = findViewById(R.id.butRanking);
+        butRanking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                initGameOver();
+            }
+        });
+    }
+    private void initGameOver(){
+        Intent intent = new Intent(this,GameOver.class);
+        intent.putExtra("Score", "0");
+        intent.putExtra("GameMode",-1);
+        startActivity(intent);
     }
     
     private void iniciarbackGroundList(){
