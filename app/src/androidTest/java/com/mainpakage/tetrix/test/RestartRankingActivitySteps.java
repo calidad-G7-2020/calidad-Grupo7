@@ -95,7 +95,8 @@ public class RestartRankingActivitySteps {
 
     @Then("^The ranking list is empty$")
     public void the_ranking_list_is_empty() {
-        assertNotNull(activity);
+        gameOver.isRankingVacio();
+
         /*
         ViewInteraction listRanking = onView(withId(R.id.listRanking);
 

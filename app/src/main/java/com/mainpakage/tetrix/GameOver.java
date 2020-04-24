@@ -178,6 +178,14 @@ public class GameOver extends AppCompatActivity {
         listRanking.setAdapter(arrayAdapter);
 
     }
+    public boolean isRankingVacio(){
+
+        if (scores == null) {
+            scores = new HashSet<>();
+        }
+
+        return scores.isEmpty();
+    }
 
     public void updateRanking(){
 
