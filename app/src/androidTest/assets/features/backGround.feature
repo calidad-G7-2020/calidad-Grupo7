@@ -7,4 +7,4 @@ Feature: Have a select bar to change the background color
   Scenario: Create a select bar
     Given I'm in the menu of the game and I want to change background color
     When I select the background in select bar
-    Then  I change the background color
+    Then I change the background color
