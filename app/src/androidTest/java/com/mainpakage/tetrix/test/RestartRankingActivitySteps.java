@@ -2,6 +2,7 @@ package com.mainpakage.tetrix.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.After;
 
 import org.junit.Rule;
 
@@ -39,18 +41,24 @@ public class RestartRankingActivitySteps {
 
     private Activity activity;
     private Button butRestablecer;
+    private GameOver gameOver;
 
     @Before("@restartRanking-feature")
     public void setup(){
         Intent intent = new Intent();
         intent.putExtra("Score", "0");
-        intent.putExtra("GameMode",-1);
+        intent.putExtra("GameMode",-2);
         activityTestRule.launchActivity(intent);
         activity = activityTestRule.getActivity();
+        this.gameOver = new GameOver();
 /*
         Intent intent = new Intent(com.mainpakage.tetrix.StartMenu.this, GameOver.class);
 
         startActivity(intent);*/
+    }
+    @After("@restartRanking-feature")
+    public void tearDown(){
+        activityTestRule.finishActivity();
     }
 
     @Given("^I´m in the ranking page$")
@@ -63,7 +71,14 @@ public class RestartRankingActivitySteps {
     public void i_press_the_restart_ranking_button() {
 
         onView(withId(R.id.butRestablecer)).perform(click());
+        gameOver.updateRanking();
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        }, 10000);
 /*
         butRestablecer = (Button) activity.findViewById(R.id.butRestablecer);
         butRestablecer.setOnTouchListener(new View.OnTouchListener() {
@@ -80,7 +95,7 @@ public class RestartRankingActivitySteps {
 
     @Then("^The ranking list is empty$")
     public void the_ranking_list_is_empty() {
-
+        assertNotNull(activity);
         /*
         ViewInteraction listRanking = onView(withId(R.id.listRanking);
 
