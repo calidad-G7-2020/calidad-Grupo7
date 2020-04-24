@@ -42,6 +42,7 @@ public class BackGroundActivitySteps {
 
     @After("@backGround-feature")
     public void tearDown(){
+
         activityTestRule.finishActivity();
     }
 
@@ -60,13 +61,20 @@ public class BackGroundActivitySteps {
     public void i_change_the_background_color() {
         onView(withId(R.id.butClassic)).perform(click());
         onView(withId(R.id.butClassic)).perform(click());
+
+        
+
+/*
+        for(int i =0 ; i<20; i++) {
+            onView(withId(R.id.flechabajo)).perform(click());
+        }
+*/
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
             }
         }, 100000);
-
     }
 
 }
