@@ -47,21 +47,16 @@ public class GameOver extends AppCompatActivity {
         gameMode = bAux.getInt("GameMode");
         adaptedArray = new ArrayList<>();
 
-            scoreText = (TextView) findViewById(R.id.Score);
-            scoreText.setText("Score: " + bAux.getString("Score"));
-            playerName = (TextView) findViewById(R.id.playerName);
-            picCam = (ImageView) findViewById(R.id.picCam);
-            listRanking = (ListView) findViewById(R.id.listRanking);
-            gameOverText = (TextView) findViewById(R.id.gameOver);
-            rankingText = (TextView) findViewById(R.id.rankingText);
-            butCl = (Button) findViewById(R.id.setName);
-            restablecer = (Button) findViewById(R.id.butRestablecer);
+        scoreText = (TextView) findViewById(R.id.Score);
+        scoreText.setText("Score: " + bAux.getString("Score"));
+        playerName = (TextView) findViewById(R.id.playerName);
+        picCam = (ImageView) findViewById(R.id.picCam);
+        listRanking = (ListView) findViewById(R.id.listRanking);
+        gameOverText = (TextView) findViewById(R.id.gameOver);
+        rankingText = (TextView) findViewById(R.id.rankingText);
+        butCl = (Button) findViewById(R.id.setName);
+        restablecer = (Button) findViewById(R.id.butRestablecer);
 
-            System.out.println("HEEEEEELLLLLOOOOOOOOOOOOOOOOOOOOO");
-            /*rankingText = (TextView) findViewById(R.id.rankingText);
-            listRanking = (ListView) findViewById(R.id.listRanking);
-            restablecer = (Button) findViewById(R.id.butRestablecer);
-        */
         if(gameMode != -2) {
 
             if (gameMode == 0)
@@ -72,6 +67,8 @@ public class GameOver extends AppCompatActivity {
             scores = preferences.getStringSet("Scores", null);
             editor = preferences.edit();
         }else{
+            butCl.setVisibility(View.GONE);
+            gameOverText.setVisibility(View.GONE);
             scores = new HashSet<>();
             scores.add("NOMBRE/128");
         }
@@ -200,8 +197,6 @@ public class GameOver extends AppCompatActivity {
             toast1.setGravity(Gravity.CENTER,0,0);
             toast1.show();
         }
-        System.out.println("Scores"+scores);
-        System.out.println("Ranking"+ranking);
     }
 
     public void vaciarRanking(View v){
@@ -209,6 +204,7 @@ public class GameOver extends AppCompatActivity {
         if(gameMode != -2) {
             this.editor.clear();
             this.editor.apply();
+            scores = new HashSet<>();
         }else{
             this.scores.clear();
         }
