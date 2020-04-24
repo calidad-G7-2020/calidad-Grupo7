@@ -7,5 +7,5 @@ Feature: Exit game
   Scenario: Go to main menu
     Given I'm in the middle of a game and I want to go out
     When I press the exit button
-    Then  I go back to the main menu
+    Then I go back to the main menu
 

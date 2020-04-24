@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
@@ -238,7 +239,11 @@ public class MainActivity extends AppCompatActivity {
             customView.getSta().start();}
     }
 
+    public void exitView (View view)
 
+    {
+        finish();
+    }
 
     public void updateScore(String s){
         sc.setText(s);

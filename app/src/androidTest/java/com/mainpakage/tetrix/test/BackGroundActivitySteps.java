@@ -1,6 +1,8 @@
 package com.mainpakage.tetrix.test;
 
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 
@@ -10,6 +12,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import androidx.test.rule.ActivityTestRule;
 
+import com.mainpakage.tetrix.MainActivity;
 import com.mainpakage.tetrix.StartMenu;
 import com.mainpakage.tetrix.R;
 
@@ -34,7 +37,7 @@ public class BackGroundActivitySteps {
     @Before("@backGround-feature")
     public void setup(){
         Intent intent = new Intent();
-        intent.putExtra("GameMode",-1);
+        intent.putExtra("GameMode",0);
         activityTestRule.launchActivity(intent);
         activity = activityTestRule.getActivity();
 
@@ -42,6 +45,7 @@ public class BackGroundActivitySteps {
 
     @After("@backGround-feature")
     public void tearDown(){
+
         activityTestRule.finishActivity();
     }
 
@@ -59,14 +63,17 @@ public class BackGroundActivitySteps {
     @Then("^I change the background color$")
     public void i_change_the_background_color() {
         onView(withId(R.id.butClassic)).perform(click());
-        onView(withId(R.id.butClassic)).perform(click());
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
 
-            }
-        }, 100000);
+   /*     onView(withId(R.id.butClassic)).perform(click());
 
+        for(int i =0 ; i<20; i++) {
+            onView(withId(R.id.flechabajo)).perform(click());
+        }
+
+        activity.getApplicationContext().getApplicationContext() ;
+        activity.getApplication();
+        activity.finish();
+        */
     }
 
 }

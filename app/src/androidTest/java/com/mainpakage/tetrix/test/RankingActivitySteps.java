@@ -42,34 +42,42 @@ public class RankingActivitySteps {
     public ActivityTestRule<StartMenu> activityTestRule = new ActivityTestRule<>(StartMenu.class);
 
     private Activity activity;
+    private GameOver gameOver;
 
     @Before("@ranking-feature")
     public void setup(){
-/*
         Intent intent = new Intent();
+        intent.putExtra("GameMode",-1);
         activityTestRule.launchActivity(intent);
         activity = activityTestRule.getActivity();
-*/
+
+
         /*Intent intent = new Intent(com.mainpakage.tetrix.StartMenu.this, GameOver.class);
 
         startActivity(intent);*/
     }
-
+    @After("@ranking-feature")
+    public void tearDown(){
+        activityTestRule.finishActivity();
+    }
 
     @Given("^I´m in the main menu of game$")
-    public void im_in_the_main_menu_of_game() throws Throwable {
+    public void im_in_the_main_menu_of_game() {
 
-        throw new PendingException();
+        assertNotNull(activity);
     }
 
     @When("^I press the show ranking button$")
-    public void i_press_the_show_ranking_button() throws Throwable {
-        throw new PendingException();
+    public void i_press_the_show_ranking_button() {
+
+
+
     }
 
     @Then("^I can see the best scores of the players$")
-    public void i_can_see_the_best_scores_of_the_players() throws Throwable {
-        throw new PendingException();
+    public void i_can_see_the_best_scores_of_the_players() {
+
+        assertNotNull(activity);
     }
 
 }
