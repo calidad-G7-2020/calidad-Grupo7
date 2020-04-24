@@ -85,6 +85,27 @@ public class MainActivity extends AppCompatActivity {
             nP.setImageResource(R.drawable.nextsp);
         }
 
+        else if(thm==2){    //Red theme
+            selectPalette(palette); //[0-2 (classic), 3-5 (spooky)]
+            back.setBackgroundResource(R.drawable.bgcl61);
+            scoreBack.setImageResource(R.drawable.scorecl);
+            nP.setImageResource(R.drawable.nextcl);
+        }
+
+        else if(thm==3){    //Blue theme
+            selectPalette(palette); //[0-2 (classic), 3-5 (spooky)]
+            back.setBackgroundResource(R.drawable.bgcl62);
+            scoreBack.setImageResource(R.drawable.scorecl);
+            nP.setImageResource(R.drawable.nextcl);
+        }
+
+        else if(thm==4){    //Brown theme
+            selectPalette(palette); //[0-2 (classic), 3-5 (spooky)]
+            back.setBackgroundResource(R.drawable.bgcl63);
+            scoreBack.setImageResource(R.drawable.scorecl);
+            nP.setImageResource(R.drawable.nextcl);
+        }
+
         final int rotate;
         if(thm==0){rotate=R.drawable.rotateclassic;}
         else{rotate=R.drawable.rotatespoky;}
