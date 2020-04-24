@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".StartMenu">
 
-    <androidx.legacy.widget.Space
+    <Space
         android:layout_width="1dp"
         android:layout_height="35dp" />
 
@@ -21,7 +21,7 @@
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/logo" />
 
-    <androidx.legacy.widget.Space
+    <Space
         android:layout_width="1dp"
         android:layout_height="35dp" />
 
@@ -52,7 +52,7 @@
                 android:background="@drawable/classic"
                 android:gravity="center|center_horizontal" />
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:layout_width="13dp"
                 android:layout_height="0dp" />
 
@@ -70,8 +70,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="71dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="363dp">
 
             <Space
                 android:layout_width="60dp"
@@ -88,6 +91,50 @@
             <Space
                 android:layout_width="65dp"
                 android:layout_height="71dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonPre"
+                android:layout_width="60dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/leftbutclassic"
+                android:onClick="previous" />
+
+            <ImageView
+                android:id="@+id/colorView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FAEE02"
+                android:padding="1dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonNex"
+                android:layout_width="60dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/rightbutclassic"
+                android:onClick="next" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
