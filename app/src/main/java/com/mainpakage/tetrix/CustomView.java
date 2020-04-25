@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.media.MediaPlayer;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -45,6 +46,8 @@ public class CustomView extends View {
     int gameMode;
     int numLines;
     Random r = new Random();
+    public MediaPlayer ring;
+    boolean notHaveSounded;
 
     public SecondThreat getSt() {
         return st;
@@ -125,7 +128,7 @@ public class CustomView extends View {
                     aux = aux * 2;
             }
         }
-        return (30 * aux);
+        return (25 * aux);
     }
 
     public void updateScore(int lines) {
@@ -134,6 +137,14 @@ public class CustomView extends View {
             scoreaux = scoreaux + updateScore();
         }
         score += scoreaux * lines;
+        if ((score != 0) &&((score % 100) == 0) && notHaveSounded){
+            ring = MediaPlayer.create(ma, R.raw.popding);
+            ring.start();
+            notHaveSounded = false;
+        }
+        if((score % 100) != 0){
+            notHaveSounded = true;
+        }
         ma.updateScore("" + score);
     }
 

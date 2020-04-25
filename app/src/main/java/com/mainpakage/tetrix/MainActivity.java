@@ -249,6 +249,9 @@ public class MainActivity extends AppCompatActivity {
         sc.setText(s);
     }
 
+    public CustomView getCustomView() {
+        return customView;
+    }
 
     public void changeGameOver(){
         if(!customView.isSecondThreadRunnig()){
