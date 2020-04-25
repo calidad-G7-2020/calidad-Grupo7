@@ -1,6 +1,5 @@
 package com.mainpakage.tetrix.test;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import org.junit.Rule;
@@ -16,7 +15,6 @@ import static junit.framework.TestCase.assertNotNull;
 import androidx.test.rule.ActivityTestRule;
 import com.mainpakage.tetrix.R;
 import com.mainpakage.tetrix.StartMenu;
-
 
 public class ExitActivitySteps {
 

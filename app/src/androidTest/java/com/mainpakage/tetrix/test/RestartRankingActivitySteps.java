@@ -3,37 +3,24 @@ package com.mainpakage.tetrix.test;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
-
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.typeText;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
-
-import androidx.test.espresso.ViewInteraction;
 import androidx.test.rule.ActivityTestRule;
-
 import com.mainpakage.tetrix.GameOver;
 import com.mainpakage.tetrix.R;
-
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.After;
-
 import org.junit.Rule;
+import java.util.Timer;
+import java.util.TimerTask;
 
-import static junit.framework.Assert.assertNotNull;
-
-//@RunWith(Cucumber.class)
 public class RestartRankingActivitySteps {
 
     @Rule
@@ -51,10 +38,7 @@ public class RestartRankingActivitySteps {
         activityTestRule.launchActivity(intent);
         activity = activityTestRule.getActivity();
         this.gameOver = new GameOver();
-/*
-        Intent intent = new Intent(com.mainpakage.tetrix.StartMenu.this, GameOver.class);
 
-        startActivity(intent);*/
     }
     @After("@restartRanking-feature")
     public void tearDown(){
@@ -63,8 +47,8 @@ public class RestartRankingActivitySteps {
 
     @Given("^I´m in the ranking page$")
     public void im_in_the_ranking_page() {
+        onView(withId(R.id.playerName)).perform(typeText(""), closeSoftKeyboard());
 
-        assertNotNull(activity);
     }
 
     @When("^I press the restart ranking button$")
@@ -73,37 +57,13 @@ public class RestartRankingActivitySteps {
         onView(withId(R.id.butRestablecer)).perform(click());
         gameOver.updateRanking();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        }, 10000);
-/*
-        butRestablecer = (Button) activity.findViewById(R.id.butRestablecer);
-        butRestablecer.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                activity.ge
-                //com.mainpakage.tetrix.GameOver.vaciarRanking(v);
-                .vaciarRanking(v);
-                return false;
-            }
-        });*/
-        //assertNotNull(activity);
     }
 
     @Then("^The ranking list is empty$")
     public void the_ranking_list_is_empty() {
+
         gameOver.isRankingVacio();
 
-        /*
-        ViewInteraction listRanking = onView(withId(R.id.listRanking);
-
-        System.out.println(listRanking);
-        System.out.println(listRanking.toString().isEmpty());
-        */
-        //assertNotNull(activity);
     }
 
 

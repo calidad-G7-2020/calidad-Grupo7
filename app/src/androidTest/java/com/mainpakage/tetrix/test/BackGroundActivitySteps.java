@@ -1,29 +1,19 @@
 package com.mainpakage.tetrix.test;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
-
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
-
 import androidx.test.rule.ActivityTestRule;
-
-import com.mainpakage.tetrix.MainActivity;
 import com.mainpakage.tetrix.StartMenu;
 import com.mainpakage.tetrix.R;
-
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
-
 import org.junit.Rule;
-
 import static junit.framework.Assert.assertNotNull;
 
 
@@ -64,16 +54,17 @@ public class BackGroundActivitySteps {
     public void i_change_the_background_color() {
         onView(withId(R.id.butClassic)).perform(click());
 
-   /*     onView(withId(R.id.butClassic)).perform(click());
+        onView(withId(R.id.butClassic)).perform(click());
 
-        for(int i =0 ; i<20; i++) {
+        for(int i =0 ; i<10; i++) {
             onView(withId(R.id.flechabajo)).perform(click());
         }
 
         activity.getApplicationContext().getApplicationContext() ;
         activity.getApplication();
         activity.finish();
-        */
+
+        onView(withId(R.id.exit)).perform(click());
     }
 
 }

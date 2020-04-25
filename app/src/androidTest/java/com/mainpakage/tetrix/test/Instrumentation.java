@@ -2,9 +2,6 @@ package com.mainpakage.tetrix.test;
 
 import android.os.Bundle;
 import androidx.test.runner.MonitoringInstrumentation;
-
-import com.mainpakage.tetrix.BuildConfig;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.android.CucumberInstrumentationCore;
 
@@ -18,8 +15,6 @@ public class Instrumentation extends MonitoringInstrumentation {
     @Override
     public void onCreate(Bundle arguments) {
         super.onCreate(arguments);
-
-
 
         instrumentationCore.create(arguments);
         start();

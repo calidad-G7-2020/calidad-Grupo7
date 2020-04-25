@@ -70,7 +70,10 @@ public class GameOver extends AppCompatActivity {
             butCl.setVisibility(View.GONE);
             gameOverText.setVisibility(View.GONE);
             scores = new HashSet<>();
-            scores.add("NOMBRE/128");
+            scores.add("Player 1/150");
+            scores.add("Player 2/100");
+            scores.add("Player 3/60");
+            scores.add("Player 4/10");
         }
         updateRanking();
 
