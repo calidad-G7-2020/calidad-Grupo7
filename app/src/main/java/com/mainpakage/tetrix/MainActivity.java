@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
@@ -83,6 +84,27 @@ public class MainActivity extends AppCompatActivity {
             back.setBackgroundResource(R.drawable.bgsp0);
             scoreBack.setImageResource(R.drawable.scoresp);
             nP.setImageResource(R.drawable.nextsp);
+        }
+
+        else if(thm==2){    //Red theme
+            selectPalette(palette); //[0-2 (classic), 3-5 (spooky)]
+            back.setBackgroundResource(R.drawable.bgcl61);
+            scoreBack.setImageResource(R.drawable.scorecl);
+            nP.setImageResource(R.drawable.nextcl);
+        }
+
+        else if(thm==3){    //Blue theme
+            selectPalette(palette); //[0-2 (classic), 3-5 (spooky)]
+            back.setBackgroundResource(R.drawable.bgcl62);
+            scoreBack.setImageResource(R.drawable.scorecl);
+            nP.setImageResource(R.drawable.nextcl);
+        }
+
+        else if(thm==4){    //Brown theme
+            selectPalette(palette); //[0-2 (classic), 3-5 (spooky)]
+            back.setBackgroundResource(R.drawable.bgcl63);
+            scoreBack.setImageResource(R.drawable.scorecl);
+            nP.setImageResource(R.drawable.nextcl);
         }
 
         final int rotate;
@@ -217,12 +239,19 @@ public class MainActivity extends AppCompatActivity {
             customView.getSta().start();}
     }
 
+    public void exitView (View view)
 
+    {
+        finish();
+    }
 
     public void updateScore(String s){
         sc.setText(s);
     }
 
+    public CustomView getCustomView() {
+        return customView;
+    }
 
     public void changeGameOver(){
         if(!customView.isSecondThreadRunnig()){
