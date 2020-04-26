@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.mainpakage.sprites", appContext.getPackageName());
+        assertEquals("com.mainpakage.tetrix", appContext.getPackageName());
     }
 }
