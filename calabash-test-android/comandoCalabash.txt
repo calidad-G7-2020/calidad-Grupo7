@@ -1,0 +1,28 @@
+bundle install
+
+bundle update
+
+adb devices  
+
+
+bundle exec calabash-android console ..\app\build\outputs\apk\androidTest\debug\app-debug-androidTest.apk features/my_first.feature
+
+
+bundle exec calabash-android resign ..\app\build\outputs\apk\androidTest\debug\app-debug-androidTest.apk
+
+
+jarsigner -keystore debug.keystore -storepass android -keypass android AndroidDemoProject.apk androiddebugkey
+
+
+bundle exec calabash-android run ..\app\build\outputs\apk\debug\app-debug.apk
+
+
+bundle exec calabash-android run test_servers\5f88fa283c3c8f1c4842eac449895613_0.9.5.apk
+
+
+
+Fuentes:
+https://bitbar.com/blog/how-to-setup-and-get-started-with-calabash/
+https://www.guru99.com/calabash-android-ios-testing.htmlhttps://github.com/calabash/calabash-android
+https://github.com/calabash/calabash-android/wiki/Running-Calabash-Android
+https://github.com/calabash/calabash-android/blob/master/documentation/installation.md
