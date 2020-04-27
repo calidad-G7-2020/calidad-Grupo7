@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutprincipal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:textAlignment="center"
+            android:background="#E0ECF8">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_above="@+id/botonRotar"
+                android:layout_below="@+id/layoutTablero"
+                android:layout_marginTop="-160dp"
+                android:layout_marginBottom="10dp"
+                android:background="#43909c" />
+
+            <RelativeLayout
+                android:id="@+id/layoutTablero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="160dp"
+                android:background="#00000000">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/thanos"
+                    android:layout_width="240dp"
+                    android:layout_height="206dp"
+                    android:src="@drawable/thanos"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/botonDcha"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/botonRotar"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/roundcorner"
+                android:contentDescription="@string/botones_mov_fichas"
+                android:src="@android:drawable/ic_media_ff" />
+
+            <ImageButton
+                android:id="@+id/botonBajar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toStartOf="@+id/botonDcha"
+                android:layout_toLeftOf="@+id/botonDcha"
+                android:layout_toEndOf="@+id/botonIzda"
+                android:layout_toRightOf="@+id/botonIzda"
+                android:background="@drawable/roundcorner"
+                android:contentDescription="@string/botones_mov_fichas"
+                android:src="@android:drawable/arrow_down_float" />
+
+            <ImageButton
+                android:id="@+id/botonRotar"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/botonBajar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="114dp"
+                android:layout_marginLeft="114dp"
+                android:layout_marginEnd="114dp"
+                android:layout_marginRight="114dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/roundcorner"
+                android:contentDescription="@string/botones_mov_fichas"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/stat_notify_sync_noanim" />
+
+            <ImageButton
+                android:id="@+id/botonIzda"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/botonRotar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/roundcorner"
+                android:contentDescription="@string/botones_mov_fichas"
+                android:src="@android:drawable/ic_media_rew" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutlateral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#423F3F">
+
+            <RelativeLayout
+                android:id="@+id/ventanaSig"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimaryDark"
+
+                ></RelativeLayout>
+
+            <TextView
+                android:id="@+id/puntosText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/puntosLabel"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/puntosLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ventanaSig"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_puntos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:visibility="visible"
+                tools:text="Puntos:"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/nivelLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/puntosText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_nivel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:visibility="visible"
+                tools:text="Nivel:"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/nivelText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nivelLabel"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/snap"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@+id/nivelText"
+                android:layout_marginTop="47dp"
+                android:background="@mipmap/snap"
+                android:contentDescription="@string/text_snap"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonAjustes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="18dp"
+                android:text="@string/text_go_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonAjustes"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="reiniciar"
+                android:text="@string/text_reiniciar" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

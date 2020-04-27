@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Tetris</string>
+
+    <string name="botones_mov_fichas">mover fichas</string>
+
+    <string name="text_puntos">Puntos:</string>
+    <string name="text_nivel">Nivel:</string>
+
+    <string name="text_start">START</string>
+    <string name="text_go_menu">MENU</string>
+    <string name="text_go_colores">COLORES</string>
+    <string name="text_go_instrucciones">INSTRUCCIONES</string>
+    <string name="text_go_creditos">CREDITOS</string>
+    <string name="text_reiniciar">REINICIAR</string>
+
+    <string name="text_exit">EXIT</string>
+
+    <string name="text_nombre_jugador">Nombre del Jugador</string>
+    <string name="text_puntuacion">Puntuacion de la partida</string>
+    <string name="boton_registrar">Registrar</string>
+
+    <string name = "text_mostrar_ranking">mostrar ranking</string>
+    <string name = "text_restablecer_estadisticas">Restablecer\nEstadisticas</string>
+    <string name = "text_1ranking">1º</string>
+    <string name = "text_2ranking">2º</string>
+    <string name = "text_3ranking">3º</string>
+    <string name = "text_4ranking">4º</string>
+    <string name = "text_5ranking">5º</string>
+    <string name = "text_6ranking">6º</string>
+    <string name = "text_puntos_actual">Tu puntuacion:</string>
+
+    <string name="title_activity_opciones">Colores</string>
+    <string name="text_cuadrado">Cuadrado</string>
+    <string name="text_ColorCuadrado">Color Cuadrado:</string>
+    <string name="text_zPieza">Z Pieza</string>
+    <string name="text_ColorZPieza">Color Z:</string>
+    <string name="text_iPieza">I Pieza</string>
+    <string name="text_ColorIPieza">Color I:</string>
+    <string name="text_tPieza">T Pieza</string>
+    <string name="text_ColorTPieza">Color T:</string>
+    <string name="text_sPieza">S Pieza</string>
+    <string name="text_ColorSPieza">Color S:</string>
+    <string name="text_lPieza">L Pieza</string>
+    <string name="text_ColorLPieza">Color L:</string>
+    <string name="text_jPIeza">J Pieza</string>
+    <string name="text_ColorJPIeza">Color J:</string>
+
+    <string name="text_colorRojo">Red</string>
+    <string name="text_colorRosa">Pink</string>
+    <string name="color_colorAzulClaro">Light Blue</string>
+    <string name="text_colorAzulOscuro">Dark Blue</string>
+    <string name="text_colorVerde">Green</string>
+    <string name="text_colorNaranja">Orange</string>
+    <string name="text_colorAmarillo">Yellow</string>
+
+    <string name="text_cambios">Aplicar Cambios</string>
+
+    <string name="text_colores">Colores</string>
+    <string name="imageView_Opciones">Opciones</string>
+
+    <string name="text_atras">Atras</string>
+
+    <string name="text_muerte_subdita">Muerte Súbita</string>
+    <string name="text_modo_clasico">Modo Clásico</string>
+
+    <string name="text_snap">Snap</string>
+    <string name="title_activity_colores">ColoresActivity</string>
+    <string name="large_text">
+        "Modo Clásico: \n\n"
+        "El modo de juego perfecto para los nostálgicos del Tetris.\n"
+        "- El objetivo es hacer caer piezas e ir rellenando huecos para conseguir hacer líneas."
+        "Una vez creadas, desaparecen, y nos interesa hacerlo de cuatro en cuatro en vez de una en una por los "
+        "puntos que hay implicados en ello. Si consigues una de cuatro, felicidades, acabas de hacer un Tetris.\n\n"
+
+        "- Mueve los bloques a la derecha y a la izquierda pulsando los botones correspondientes. "
+        "Prueba a moverlos y a ensamblarlos juntos.\n\n"
+
+        "- Conoce los diferentes tipos de bloques. Hay siete diferentes:\n\n   "
+        "     I-blocks son útiles para conseguir "Tetris."
+        " O-blocks para grandes huecos."
+        " L-blocks para rellenar huecos medianos."
+        " J-blocks es el opuesto a los L-blocks."
+        " S-blocks para rellenar pequeños huevos."
+        " Z-blocks es el opuesto a los S-blocks."
+        " T-blocks también sirven para rellenar pequeños huecos.\n"
+        "- Utiliza el botón de acción para rotar los bloques y adaptarlos a los huecos.\n"
+        "- Verifica las próximas piezas conforme aparecen y planifica dónde las vas a poner.
+        Esto será más fácil cuanto más juegues, tranquilo.\n"
+
+        "Modo muerte subita:\n"
+        "El modo de juego para los amantes de los retos. "
+        "El objetivo del juego es el mismo pero con desafiantes eventos que te dificultaran mantenerte en la partida. "
+        "En primer lugar el tablero de juego ira decreciendo, cada 50 segundos las dos filas superiores quedaran invalidadas"
+        "y aceleraran el game over.\n"
+        "No solo eso sino que entra en juego un nuevo tipo de bloque: "
+        " Troll-blocks son bloques que aparecen en los lados de la pantalla cada 30 segundos y de los cuales no tienes el controlsX"
+        "Dificultaran que puedas eliminar lineas y te limitaran el espacio de maniobra.\n"
+        "Estas nuevas funcionalidades suenan aterradoras pero no desespereis, ¡Dispondreis de un poderoso aliado! "
+        "El titan acorazado de color morado Thanos ha reunido las gemas del infinito, con su guantelete /n"
+        "sereis capaces de resetear el tablero de juego y cambiar el curso de la partida."
+        "Sin embargo, este poder no es para siempre y disponeis un uso limitado del guantelete por partida
+        por lo que un uso inteligente de este poder repercutira enormemente en vuestras puntuaciones.\n\n "
+    </string>
+    <string name="action_settings">Settings</string>
+
+    <string name="creditos">CREDITOS</string>
+    <string name="creditos_Alicia">Alicia Merino Martínez</string>
+    <string name="creditos_DMG">Daniel Moreno Godoy</string>
+    <string name="creditos_DM">Daniel Murillo Garzón </string>
+    <string name="creditos_Diego">Diego Pascual Ferrer</string>
+    <string name="creditos_Miguel">Miguel Rodríguez Álvarez</string>
+    <string name="creditos_Oscar">Óscar Rivas Melar</string>
+    <string name="creditos_Alfonso">Víctor Alfonso Pajuelo Aguirre</string>
+    <string name="creditos_procesos_software">Procesos del Software\nGrado em Ingeniería del Software\nUniversidad Rey Juan Carlos 2019-2020</string>
+
+    <string name="boton_creditos">boton creditos</string>
+    <string name="foto_nuevo_jugador">PHOTO</string>
+    <string name="text_hacer_foto">Hacer foto</string>
+    <string name="text_rankings">Ranking</string>
+    <string name="text_top6">TOP 6 mejores jugadores</string>
+</resources>

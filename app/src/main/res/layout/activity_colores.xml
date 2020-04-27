@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColoresActivity">
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="629dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_CuadradoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/text_ColorCuadrado"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCuadrado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_ZText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ColorZPieza"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerZPieza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_IText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ColorIPieza"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerIPieza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_TText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ColorTPieza"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerTPieza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_SText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ColorSPieza"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerSPieza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_LText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ColorLPieza"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerLPieza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_JText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ColorJPIeza"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerJPieza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/buttonCambios"
+                style="@android:style/Widget.Holo.Light.Button.Toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cambios"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
